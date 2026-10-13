@@ -1,0 +1,1003 @@
+﻿table,field,type,comment,source,location,nullability,constraint,default,partition
+${dme_ads}.tb_ngs_sku_sales_summary_bu,customer_id,STRING,客户id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行122–124,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,customer_name_en,STRING,客户英文名,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行124–125,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,customer_name,STRING,客户名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行125–126,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,first_channel_id,STRING,一级渠道id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行126–127,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,first_channel_name,STRING,一级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行127–128,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,second_channel_id,STRING,二级渠道id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行128–129,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,second_channel_name,STRING,二级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行129–130,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,second_channel_rename,STRING,拼接一级二级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行130–131,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,third_channel_id,STRING,三级渠道id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行131–132,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,third_channel_name,STRING,三级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行132–133,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,third_channel_rename,STRING,拼接一级二级三级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行133–134,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,fourth_channel_id,STRING,四级渠道id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行134–135,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,fourth_channel_name,STRING,四级渠道名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行135–136,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,henkel_region,STRING,大区,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行136–137,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,province,STRING,省份,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行137–138,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,customer_grade_mark_code,STRING,客户类型分ABCD,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行138–139,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,customer_grade_mark_name,STRING,A类客户、B类客户、C类、D类,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行139–140,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sku_id,STRING,产品id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行140–141,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sku_name,STRING,产品名字,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行141–142,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sku_name_en,STRING,产品英文名字,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行142–143,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sku_ngs_amt,"DECIMAL(28,6)",累计销额,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行143–144,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sku_quantity_amt,BIGINT,累计销售数量,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行144–145,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_barcode,STRING,产品条形码,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行145–146,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,category_code,STRING,品类代码,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行146–147,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,category_name,STRING,品类名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行147–148,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,brand_code,STRING,品牌代码,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行148–149,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,brand_name,STRING,品牌名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行149–150,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_line_code,STRING,产品线,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行150–151,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_line_name,STRING,产品线名称,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行151–152,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,new_product_code,STRING,新品(1新品，0非新品),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行152–153,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,new_product_name,STRING,新品(1新品，0非新品),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行153–154,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,core_product_line_code,STRING,核心产品线(1新品，0非新品),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行154–155,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,core_product_line_name,STRING,核心产品线(1新品，0非新品),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行155–156,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_pack_type,STRING,产品包装分类（一级）,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行156–157,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_pack,STRING,产品包装（二级）,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行157–158,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_function,STRING,一级子品类,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行158–159,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sub_product_function,STRING,二级子品类,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行159–160,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,colour_hue,STRING,产品色调,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行160–161,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,year,STRING,年,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行161–162,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,quarter,STRING,季度,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行162–163,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,month,STRING,月,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行163–164,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,day,STRING,天,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行164–165,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,bu_1,STRING,业务条线一级(Retail/Professional),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行165–166,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,bu_2,STRING,业务条线二级(Beauty Care/Laundry/SP/SKP),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行166–167,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,whether_pro_sample_product,STRING,专业线mini免费品标签(1是，0否),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行167–168,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,ges,"DECIMAL(28,6)",销售总金额GES,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行168–169,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,bu_3,STRING,业务条线三级(SKP&SP/SP/SKP),SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行169–170,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,ds,STRING,分区时间,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行172–174,未声明,仅保留DDL声明,未声明,True
+${dme_ads}.tb_ngs_sku_sales_summary_bu,channel_customer_Permission,STRING,客户渠道（权限字段）,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行180–182,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,region_customer_Permission,STRING,客户区域（权限字段）,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行182–183,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,is_expired_customer,STRING,合作状态（适用所有渠道的经销商），Others/合作中/已关闭,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行187–189,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,product_function_cn,STRING,一级子品类中文,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行189–190,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,sub_product_function_cn,STRING,二级子品类中文,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行190–191,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,nes,"DECIMAL(28,6)",全称Net_External_Sales，即外部净销售额,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行191–192,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,ship_to_party_code,STRING,送达方（客户编码）,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行195–197,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,ppd,"DECIMAL(28,6)",Price_Promotion_Discount，促销价格折扣,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行197–198,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,pld,"DECIMAL(28,6)",Price_Listing_Discount，固定价格折扣,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行198–199,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,fg,"DECIMAL(28,6)",Free_Goods，赠品金额,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行199–200,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,l6a_others,"DECIMAL(28,6)",l6a others,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行200–201,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,order_id,STRING,订单id,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行201–202,未声明,仅保留DDL声明,未声明,False
+${dme_ads}.tb_ngs_sku_sales_summary_bu,billing_type,STRING,计费类型,SQL27,SQL27 Sell-in报表.xlsx / Sheet1!D27；SQL行202–203,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_id,STRING,客户id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_id,STRING,产品id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_barcode,STRING,产品条码,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sku_name,STRING,产品名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sku_name_en,STRING,产品英文名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_brand_code,STRING,汉高品牌代码,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_brand,STRING,汉高品牌名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_brand_en,STRING,汉高品牌英文名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_category_code,STRING,汉高品类代码,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_category,STRING,汉高品类名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_category_en,STRING,汉高品类英文名称,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_line_code,STRING,产品线id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_line_name,STRING,产品线,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_function,STRING,一级子品类,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sub_product_function,STRING,二级子品类,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_pack_type,STRING,产品包装类型,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_pack,STRING,产品包装,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,colour_hue,STRING,产品色调,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,new_product_code,STRING,新品（1新品，0非新品）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,new_product_name,STRING,新品,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,core_product_line_code,STRING,核心产品线（1核心产品线，0非核心品产品线）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,core_product_line_name,STRING,核心产品线（核心线，非核心品线）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_region,STRING,区域,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_region_en,STRING,区域英文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,province,STRING,省份,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,province_en,STRING,省份英文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,first_channel_id,STRING,一级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,first_channel_name,STRING,一级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,second_channel_name,STRING,二级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,third_channel_name,STRING,三级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,fourth_channel_name,STRING,四级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_group,STRING,客户分类Customer Group,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_group_cn_lv1,STRING,客户分类Customer Group1(中文),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_group_cn_lv2,STRING,客户分类Customer Group2(中文),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_name_en,STRING,客户中文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_name,STRING,客户英文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行47–48,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_grade_mark_name,STRING,客户等级,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行48–49,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,profit_center_id,STRING,利润中心id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行49–50,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,plant_id,STRING,工厂id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行50–51,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,posting_date,DATETIME,过账日期,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行51–52,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,invoice_date,DATETIME,发票日期,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行52–53,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,order_id,STRING,订单id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行53–54,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,reference_document_id,STRING,采购订单id,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行54–55,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,quantity_consumer_units,BIGINT,产品销售数量,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行55–56,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,quantity_invoiced,BIGINT,数量,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行56–57,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,gross_sales_price,"DECIMAL(28,6)",销售金额GES,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,material_costs,"DECIMAL(28,6)",材料费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行58–59,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_promotion_discount,"DECIMAL(28,6)",临时促销折扣费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行59–60,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_listing_discount,"DECIMAL(28,6)",固定促销折扣费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行60–61,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd_free_goods,"DECIMAL(28,6)",免费品,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行61–62,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6a_ib_invoice,"DECIMAL(28,6)",l6a发票费用,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行62–63,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6a_ib_area,"DECIMAL(28,6)",l6a区域费用,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行63–64,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_hirachy_number,STRING,产品hirachy数,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行64–65,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,transportation_invoice,"DECIMAL(28,6)",运输发票,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行65–66,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,warehouse_invoice,"DECIMAL(28,6)",出库发票,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行66–67,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,adn_promotion_bonus,"DECIMAL(28,6)",发票激励奖金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行67–68,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,cbn_imp_fund,"DECIMAL(28,6)",发票上的合作改善基金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行68–69,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,abf_assortment_bonus,"DECIMAL(28,6)",发票上的产品组合奖金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行69–70,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,abn_assortment_bonus,"DECIMAL(28,6)",发票上的分类奖金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行70–71,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,cbf_imp_fund,"DECIMAL(28,6)",发票外合作改善基金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行71–72,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ecf_process_servic,"DECIMAL(28,6)",处理发票外服务,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行72–73,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,gbf_growth_bonus,"DECIMAL(28,6)",发票外的增长奖金,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行73–74,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,hqf_hq_services,"DECIMAL(28,6)",总部服务发票外,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行74–75,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,listing_fees,"DECIMAL(28,6)",发票上的永久挂牌费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行75–76,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,selling_effort,STRING,是否批发商,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行76–77,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,terms_payment,STRING,发票付款条件,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行77–78,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,promotion_bonus_invoice,"DECIMAL(28,6)",折扣促销发票,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行78–79,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,logistics_invoice,"DECIMAL(28,6)",物流发票外,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行79–80,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,euf_agreement_bonus,"DECIMAL(28,6)",国际协议奖金折扣发票,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行80–81,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,dpf_deduction_provis,"DECIMAL(28,6)",Deduction,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行81–82,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,rpf_returns_provisio,"DECIMAL(28,6)",ROR退货预估,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行82–83,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppf_prod_prom_disc,"DECIMAL(28,6)",价差CA（incl.清货费OSMI Clearance）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行83–84,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lff_prod_listing_fee,"DECIMAL(28,6)",进场费(NKA/DT),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行84–85,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,fff_flexibility_fund,"DECIMAL(28,6)",二次陈列费+海报费+其他（合同外）(NKA/DT),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行85–86,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pxf_prod_except_disc,"DECIMAL(28,6)",缺货罚款(NKA),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行86–87,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,create_date,DATETIME,创建日期,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行87–88,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,created,STRING,创建人,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行88–89,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,billing_type,STRING,计费类型,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行89–90,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,slow_moving,STRING,是否慢流品单，Y-是，N-否,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行90–91,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sales_organization_code,STRING,销售机构代码,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行91–92,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,mark_up_ii,"DECIMAL(28,6)",mark_up_ii,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行92–93,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sku_ngs_amt,"DECIMAL(28,6)",sell-in销售金额,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行93–94,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,bu_1,STRING,业务条线一级(Consumer/Professional）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行94–95,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,bu_2,STRING,业务条线二级(Beauty/Care/Laundry/SP/SKP),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行95–96,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,whether_pro_sample_product,STRING,专业线mini免费品标签,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行96–97,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pxd_prod_except_disc,"DECIMAL(28,6)",pxd Prod except disc,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行97–98,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pxd_prodexcptobs_gds,"DECIMAL(28,6)",pxd ProdExcptObs gds,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行98–99,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pxd_prodexcptsusppr,"DECIMAL(28,6)",pxd ProdExcptSuspPr,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行99–100,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lfn_prod_listing_fee,"DECIMAL(28,6)",lfn Prod.Listing Fee,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行100–101,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pvd_prod_volume_disc,"DECIMAL(28,6)",pvd Prod Volume Disc,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行101–102,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,qln_logistics_on_inv,"DECIMAL(28,6)",qln Logistics on inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行102–103,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ecn_process_service,"DECIMAL(28,6)",ecn Process Service,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行103–104,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,cpn_cust_pick_on_inv,"DECIMAL(28,6)",cpn Cust Pick on inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行104–105,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,hqn_headqua_services,"DECIMAL(28,6)",hqn HeadQua Services,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行105–106,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,oln_othrs_line_6a,"DECIMAL(28,6)",oln Othrs line 6a,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行106–107,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ton_terms_of_payment,"DECIMAL(28,6)",ton Terms of Payment,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行107–108,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,psf_prodpricelistdis,"DECIMAL(28,6)",psf ProdPriceListDis,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行108–109,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pvf_prodvolumedisc,"DECIMAL(28,6)",pvf ProdVolumeDisc,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行109–110,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,oof_others_off_inv,"DECIMAL(28,6)",oof Others off inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行110–111,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ccf_cupn_cust_of_inv,"DECIMAL(28,6)",ccf Cupn Cust of Inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行111–112,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,cnf_cupn_ntnl_of_inv,"DECIMAL(28,6)",cnf Cupn Ntnl of Inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行112–113,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lmf_lma_6b,"DECIMAL(28,6)",lmf_lma_6b    ,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行113–114,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6a_pro,"DECIMAL(28,6)",专业线L6a,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行114–115,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6b_pro,"DECIMAL(28,6)",专业线L6b,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行115–116,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,contractual_l6,"DECIMAL(28,6)",Contractual L6,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行116–117,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,tactical_l6,"DECIMAL(28,6)",Tactical L6,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行117–118,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,last_min_adjustmt_l5,"DECIMAL(28,6)",Last Min Adjustmt L5,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行118–119,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lmn_lma_line_6a,"DECIMAL(28,6)",lmn LMA line 6a,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行119–120,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ges,"DECIMAL(28,6)",销售总金额GES,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行120–121,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_base_price,"DECIMAL(28,6)",产品基价（未税）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行121–122,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,bu_3,STRING,业务条线三级(SKP&SP/SP/SKP),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行122–123,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,packaging_costs,"DECIMAL(28,6)",Packaging Costs,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行123–124,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,bad_debts,"DECIMAL(28,6)",Bad Debts,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行124–125,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,merchandising_l10,"DECIMAL(28,6)",Merchandising L10,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行125–126,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,py_l6_adjustment,STRING,PY L6 Adjustment,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行126–127,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,commission_off_inv,"DECIMAL(28,6)",Commission off Inv %,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行127–128,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,fixed_amountsline_10,"DECIMAL(28,6)",Fixed AmountsLine 10,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行128–129,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,minigroup,"DECIMAL(28,6)",Minigroup,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行129–130,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,materialcosts_varian,"DECIMAL(28,6)",MaterialCosts Varian,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行130–131,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lma_line_12,"DECIMAL(28,6)",LMA Line 12,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行131–132,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ic_cog_hedging,"DECIMAL(28,6)",IC CoG - Hedging,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行132–133,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,processcosts_subcont,"DECIMAL(28,6)",ProcessCosts Subcont,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行133–134,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,processcosts_variabl,"DECIMAL(28,6)",ProcessCosts variabl,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行134–135,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,processcosts_varianc,"DECIMAL(28,6)",ProcessCosts Varianc,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行135–136,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,unusual_manfcosts,"DECIMAL(28,6)",unusual ManfCosts,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行136–137,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,misc_costs,"DECIMAL(28,6)",Misc. Costs,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行137–138,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,processcosts_fix,"DECIMAL(28,6)",ProcessCosts fix,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行138–139,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lma_line_13,"DECIMAL(28,6)",LMA Line 13,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行139–140,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,document_num,STRING,记录编码,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行140–142,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ds,STRING,分区时间,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行143,未声明,仅保留DDL声明,未声明,True
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_region_lastest,STRING,最新区域,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行149–150,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,henkel_region_en_lastest,STRING,最新区域英文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行150–151,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,province_lastest,STRING,最新省份 Province,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行151–152,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,province_en_lastest,STRING,最新省份英文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行152–153,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,first_channel_id_lastest,STRING,最新一级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行153–154,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,first_channel_name_lastest,STRING,最新一级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行154–155,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,second_channel_name_lastest,STRING,最新二级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行155–156,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,third_channel_name_lastest,STRING,最新三级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行156–157,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,fourth_channel_name_lastest,STRING,最新四级渠道,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行157–159,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,reference_item_no,STRING,Reference item no.,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行162–163,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sales_order_item,STRING,Sales Order Item,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行163–165,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ccn_cupn_cust_on_inv,"DECIMAL(28,6)",ccn Cupn Cust.on Inv,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行168–169,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,din_inactive_2021,"DECIMAL(28,6)",din inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行169–170,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,eun_agreement_bonus,"DECIMAL(28,6)",eun Agreement Bonus,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行170–171,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ped_inactive_2021,"DECIMAL(28,6)",ped inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行171–172,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pld_pricelist_disc_2,"DECIMAL(28,6)",pld PriceList Disc 2,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行172–173,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pln_perm_listingfees,"DECIMAL(28,6)",pln Perm.ListingFees,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行173–174,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pmn_purch_chain_bmc,"DECIMAL(28,6)",pmn Purch Chain BMC,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行174–175,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd_prod_prom_disc_2,"DECIMAL(28,6)",ppd Prod.Prom.Disc 2,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行175–176,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd_outlet_rebate,"DECIMAL(28,6)",PPD outlet rebate,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行176–177,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd_promotion_rebate,"DECIMAL(28,6)",PPD promotion rebate,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行177–178,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd_trade_fairs,"DECIMAL(28,6)",PPD trade fairs,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行178–179,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pod_prod_logist_dis,"DECIMAL(28,6)",pod Prod.Logist. Dis,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行179–180,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,stn_inactive_2021,"DECIMAL(28,6)",stn inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行180–181,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,tfn_inactive_2021,"DECIMAL(28,6)",tfn inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行181–182,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,mdn_mdf_on_invoice,"DECIMAL(28,6)",mdn MDF on invoice,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行182–183,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6a_spe_equipmett,"DECIMAL(28,6)",L6a Spe. Equipmett,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行183–184,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,cpf_inactive_2021,"DECIMAL(28,6)",cpf inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行184–185,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,dif_inactive_2021,"DECIMAL(28,6)",dif inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行185–186,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lcf_inactive_2021,"DECIMAL(28,6)",lcf inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行186–187,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,orf_inactive_2021,"DECIMAL(28,6)",orf inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行187–188,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pdf_inactive_2021,"DECIMAL(28,6)",pdf inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行188–189,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pef_inactive_2021,"DECIMAL(28,6)",pef inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行189–190,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pmf_inactive_2021,"DECIMAL(28,6)",pmf inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行190–191,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pof_inactive_2021,"DECIMAL(28,6)",pof inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行191–192,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppf_cash_tolerance,"DECIMAL(28,6)",ppf Cash Tolerance,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行192–193,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,tff_inactive_2021,"DECIMAL(28,6)",tff inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行193–194,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,olf_othersl6b_fa,"DECIMAL(28,6)",olf OthersL6b/FA,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行194–195,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6b_bonus,"DECIMAL(28,6)",L6b-Bonus,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行195–196,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ffn_flexibility_fund,"DECIMAL(28,6)",ffn Flexibility Fund,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行196–197,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,lcn_inactive_2021,"DECIMAL(28,6)",lcn inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行197–198,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,oon_inactive_2021,"DECIMAL(28,6)",oon inactive 2021,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行198–199,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ornopenig_remod_fees,"DECIMAL(28,6)",ornOpenig&Remod Fees,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行199–200,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pdn_purch_chain_bdf,"DECIMAL(28,6)",pdn Purch. Chain BDF,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行200–201,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,frn_funding_rate,"DECIMAL(28,6)",frn Funding Rate,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行201–203,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ppd,"DECIMAL(28,6)",Price_Promotion_Discount，促销价格折扣,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行207–209,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,pld,"DECIMAL(28,6)",Price_Listing_Discount，固定价格折扣,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行209–210,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,fg,"DECIMAL(28,6)",Free_Goods，赠品金额,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行210–211,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6a_others,"DECIMAL(28,6)",l6a others,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行211–212,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ca,"DECIMAL(28,6)",价差,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行212–213,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,rebate,"DECIMAL(28,6)",返利,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行213–214,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ka_expense,"DECIMAL(28,6)",ka expense,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行214–215,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,listing_fee,"DECIMAL(28,6)",进场费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行215–216,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,promotion_activities,"DECIMAL(28,6)",promotion activities,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行216–217,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,logistics,"DECIMAL(28,6)",物流费,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行217–218,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,oos_penalty,"DECIMAL(28,6)",oos_penalty,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行218–219,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,int_agreement,"DECIMAL(28,6)",Int. Agreement,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行219–220,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,deduction,"DECIMAL(28,6)",Returned or Refunded，退货,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行220–221,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ror,"DECIMAL(28,6)",递减,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行221–222,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,l6b_others,"DECIMAL(28,6)",l6b_others,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行222–223,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,nes,"DECIMAL(28,6)",全称Net_External_Sales，即外部净销售额；,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行223–224,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_group_en_lv1,STRING,客户分类Customer Group1(英文),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行224–225,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,customer_group_en_lv2,STRING,客户分类Customer Group2(英文),SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行225–226,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,channel_customer_Permission,STRING,客户渠道（权限字段）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行230–232,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,region_customer_Permission,STRING,客户区域（权限字段）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行232–233,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,is_expired_customer,STRING,合作状态（适用所有渠道的经销商），Others/合作中/已关闭,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行236–238,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,product_function_cn,STRING,一级子品类中文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行238–239,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,sub_product_function_cn,STRING,二级子品类中文,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行239–240,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu,ship_to_party_code,STRING,送达方（客户编码）,SQL29,SQL29 Sell-in报表.xlsx / Sheet1!D29；SQL行244–246,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_id,STRING,客户id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_id,STRING,产品id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_barcode,STRING,产品条码,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sku_name,STRING,产品名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sku_name_en,STRING,产品英文名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_brand_code,STRING,汉高品牌代码,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_brand,STRING,汉高品牌名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_brand_en,STRING,汉高品牌英文名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_category_code,STRING,汉高品类代码,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_category,STRING,汉高品类名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_category_en,STRING,汉高品类英文名称,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_line_code,STRING,产品线id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_line_name,STRING,产品线,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_function,STRING,一级子品类,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sub_product_function,STRING,二级子品类,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_pack_type,STRING,产品包装类型,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_pack,STRING,产品包装,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,colour_hue,STRING,产品色调,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,new_product_code,STRING,新品（1新品，0非新品）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,new_product_name,STRING,新品,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,core_product_line_code,STRING,核心产品线（1核心产品线，0非核心品产品线）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,core_product_line_name,STRING,核心产品线（核心线，非核心品线）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_region,STRING,区域,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_region_en,STRING,区域英文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,province,STRING,省份,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,province_en,STRING,省份英文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,first_channel_id,STRING,一级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,first_channel_name,STRING,一级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,second_channel_name,STRING,二级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,third_channel_name,STRING,三级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,fourth_channel_name,STRING,四级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_group,STRING,客户分类Customer Group,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_group_cn_lv1,STRING,客户分类Customer Group1(中文),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_group_cn_lv2,STRING,客户分类Customer Group2(中文),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_name_en,STRING,客户中文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_name,STRING,客户英文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行47–48,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_grade_mark_name,STRING,客户等级,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行48–49,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,profit_center_id,STRING,利润中心id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行49–50,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,plant_id,STRING,工厂id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行50–51,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,posting_date,DATETIME,过账日期,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行51–52,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,invoice_date,DATETIME,发票日期,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行52–53,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,order_id,STRING,订单id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行53–54,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,reference_document_id,STRING,采购订单id,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行54–55,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,quantity_consumer_units,BIGINT,产品销售数量,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行55–56,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,quantity_invoiced,BIGINT,数量,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行56–57,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,gross_sales_price,"DECIMAL(28,6)",销售金额GES,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,material_costs,"DECIMAL(28,6)",材料费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行58–59,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_promotion_discount,"DECIMAL(28,6)",临时促销折扣费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行59–60,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_listing_discount,"DECIMAL(28,6)",固定促销折扣费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行60–61,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd_free_goods,"DECIMAL(28,6)",免费品,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行61–62,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6a_ib_invoice,"DECIMAL(28,6)",l6a发票费用,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行62–63,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6a_ib_area,"DECIMAL(28,6)",l6a区域费用,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行63–64,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_hirachy_number,STRING,产品hirachy数,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行64–65,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,transportation_invoice,"DECIMAL(28,6)",运输发票,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行65–66,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,warehouse_invoice,"DECIMAL(28,6)",出库发票,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行66–67,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,adn_promotion_bonus,"DECIMAL(28,6)",发票激励奖金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行67–68,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,cbn_imp_fund,"DECIMAL(28,6)",发票上的合作改善基金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行68–69,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,abf_assortment_bonus,"DECIMAL(28,6)",发票上的产品组合奖金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行69–70,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,abn_assortment_bonus,"DECIMAL(28,6)",发票上的分类奖金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行70–71,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,cbf_imp_fund,"DECIMAL(28,6)",发票外合作改善基金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行71–72,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ecf_process_servic,"DECIMAL(28,6)",处理发票外服务,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行72–73,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,gbf_growth_bonus,"DECIMAL(28,6)",发票外的增长奖金,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行73–74,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,hqf_hq_services,"DECIMAL(28,6)",总部服务发票外,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行74–75,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,listing_fees,"DECIMAL(28,6)",发票上的永久挂牌费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行75–76,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,selling_effort,STRING,是否批发商,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行76–77,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,terms_payment,STRING,发票付款条件,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行77–78,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,promotion_bonus_invoice,"DECIMAL(28,6)",折扣促销发票,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行78–79,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,logistics_invoice,"DECIMAL(28,6)",物流发票外,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行79–80,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,euf_agreement_bonus,"DECIMAL(28,6)",国际协议奖金折扣发票,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行80–81,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,dpf_deduction_provis,"DECIMAL(28,6)",Deduction,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行81–82,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,rpf_returns_provisio,"DECIMAL(28,6)",ROR退货预估,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行82–83,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppf_prod_prom_disc,"DECIMAL(28,6)",价差CA（incl.清货费OSMI Clearance）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行83–84,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lff_prod_listing_fee,"DECIMAL(28,6)",进场费(NKA/DT),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行84–85,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,fff_flexibility_fund,"DECIMAL(28,6)",二次陈列费+海报费+其他（合同外）(NKA/DT),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行85–86,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pxf_prod_except_disc,"DECIMAL(28,6)",缺货罚款(NKA),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行86–87,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,create_date,DATETIME,创建日期,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行87–88,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,created,STRING,创建人,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行88–89,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,billing_type,STRING,计费类型,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行89–90,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,slow_moving,STRING,是否慢流品单，Y-是，N-否,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行90–91,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sales_organization_code,STRING,销售机构代码,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行91–92,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,mark_up_ii,"DECIMAL(28,6)",mark_up_ii,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行92–93,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sku_ngs_amt,"DECIMAL(28,6)",sell-in销售金额,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行93–94,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,bu_1,STRING,业务条线一级(Consumer/Professional）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行94–95,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,bu_2,STRING,业务条线二级(Beauty/Care/Laundry/SP/SKP),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行95–96,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,whether_pro_sample_product,STRING,专业线mini免费品标签,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行96–97,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pxd_prod_except_disc,"DECIMAL(28,6)",pxd Prod except disc,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行97–98,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pxd_prodexcptobs_gds,"DECIMAL(28,6)",pxd ProdExcptObs gds,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行98–99,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pxd_prodexcptsusppr,"DECIMAL(28,6)",pxd ProdExcptSuspPr,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行99–100,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lfn_prod_listing_fee,"DECIMAL(28,6)",lfn Prod.Listing Fee,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行100–101,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pvd_prod_volume_disc,"DECIMAL(28,6)",pvd Prod Volume Disc,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行101–102,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,qln_logistics_on_inv,"DECIMAL(28,6)",qln Logistics on inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行102–103,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ecn_process_service,"DECIMAL(28,6)",ecn Process Service,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行103–104,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,cpn_cust_pick_on_inv,"DECIMAL(28,6)",cpn Cust Pick on inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行104–105,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,hqn_headqua_services,"DECIMAL(28,6)",hqn HeadQua Services,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行105–106,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,oln_othrs_line_6a,"DECIMAL(28,6)",oln Othrs line 6a,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行106–107,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ton_terms_of_payment,"DECIMAL(28,6)",ton Terms of Payment,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行107–108,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,psf_prodpricelistdis,"DECIMAL(28,6)",psf ProdPriceListDis,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行108–109,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pvf_prodvolumedisc,"DECIMAL(28,6)",pvf ProdVolumeDisc,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行109–110,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,oof_others_off_inv,"DECIMAL(28,6)",oof Others off inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行110–111,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ccf_cupn_cust_of_inv,"DECIMAL(28,6)",ccf Cupn Cust of Inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行111–112,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,cnf_cupn_ntnl_of_inv,"DECIMAL(28,6)",cnf Cupn Ntnl of Inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行112–113,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lmf_lma_6b,"DECIMAL(28,6)",lmf_lma_6b    ,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行113–114,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6a_pro,"DECIMAL(28,6)",专业线L6a,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行114–115,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6b_pro,"DECIMAL(28,6)",专业线L6b,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行115–116,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,contractual_l6,"DECIMAL(28,6)",Contractual L6,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行116–117,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,tactical_l6,"DECIMAL(28,6)",Tactical L6,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行117–118,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,last_min_adjustmt_l5,"DECIMAL(28,6)",Last Min Adjustmt L5,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行118–119,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lmn_lma_line_6a,"DECIMAL(28,6)",lmn LMA line 6a,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行119–120,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ges,"DECIMAL(28,6)",销售总金额GES,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行120–121,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_base_price,"DECIMAL(28,6)",产品基价（未税）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行121–122,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,bu_3,STRING,业务条线三级(SKP&SP/SP/SKP),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行122–123,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,packaging_costs,"DECIMAL(28,6)",Packaging Costs,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行123–124,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,bad_debts,"DECIMAL(28,6)",Bad Debts,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行124–125,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,merchandising_l10,"DECIMAL(28,6)",Merchandising L10,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行125–126,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,py_l6_adjustment,STRING,PY L6 Adjustment,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行126–127,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,commission_off_inv,"DECIMAL(28,6)",Commission off Inv %,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行127–128,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,fixed_amountsline_10,"DECIMAL(28,6)",Fixed AmountsLine 10,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行128–129,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,minigroup,"DECIMAL(28,6)",Minigroup,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行129–130,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,materialcosts_varian,"DECIMAL(28,6)",MaterialCosts Varian,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行130–131,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lma_line_12,"DECIMAL(28,6)",LMA Line 12,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行131–132,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ic_cog_hedging,"DECIMAL(28,6)",IC CoG - Hedging,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行132–133,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,processcosts_subcont,"DECIMAL(28,6)",ProcessCosts Subcont,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行133–134,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,processcosts_variabl,"DECIMAL(28,6)",ProcessCosts variabl,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行134–135,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,processcosts_varianc,"DECIMAL(28,6)",ProcessCosts Varianc,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行135–136,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,unusual_manfcosts,"DECIMAL(28,6)",unusual ManfCosts,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行136–137,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,misc_costs,"DECIMAL(28,6)",Misc. Costs,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行137–138,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,processcosts_fix,"DECIMAL(28,6)",ProcessCosts fix,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行138–139,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lma_line_13,"DECIMAL(28,6)",LMA Line 13,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行139–140,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,document_num,STRING,记录编码,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行140–141,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_region_lastest,STRING,最新区域,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行141–142,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,henkel_region_en_lastest,STRING,最新区域英文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行142–143,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,province_lastest,STRING,最新省份 Province,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行143–144,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,province_en_lastest,STRING,最新省份英文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行144–145,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,first_channel_id_lastest,STRING,最新一级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行145–146,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,first_channel_name_lastest,STRING,最新一级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行146–147,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,second_channel_name_lastest,STRING,最新二级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行147–148,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,third_channel_name_lastest,STRING,最新三级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行148–149,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,fourth_channel_name_lastest,STRING,最新四级渠道,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行149–150,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,etl_time,STRING,批次时间,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行150–151,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,create_time,STRING,数据更新时间,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行151–153,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ds,STRING,分区时间,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行154,未声明,仅保留DDL声明,未声明,True
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,reference_item_no,STRING,Reference item no.,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行158–159,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sales_order_item,STRING,Sales Order Item,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行159–161,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ccn_cupn_cust_on_inv,"DECIMAL(28,6)",ccn Cupn Cust.on Inv,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行164–165,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,din_inactive_2021,"DECIMAL(28,6)",din inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行165–166,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,eun_agreement_bonus,"DECIMAL(28,6)",eun Agreement Bonus,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行166–167,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ped_inactive_2021,"DECIMAL(28,6)",ped inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行167–168,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pld_pricelist_disc_2,"DECIMAL(28,6)",pld PriceList Disc 2,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行168–169,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pln_perm_listingfees,"DECIMAL(28,6)",pln Perm.ListingFees,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行169–170,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pmn_purch_chain_bmc,"DECIMAL(28,6)",pmn Purch Chain BMC,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行170–171,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd_prod_prom_disc_2,"DECIMAL(28,6)",ppd Prod.Prom.Disc 2,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行171–172,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd_outlet_rebate,"DECIMAL(28,6)",PPD outlet rebate,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行172–173,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd_promotion_rebate,"DECIMAL(28,6)",PPD promotion rebate,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行173–174,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd_trade_fairs,"DECIMAL(28,6)",PPD trade fairs,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行174–175,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pod_prod_logist_dis,"DECIMAL(28,6)",pod Prod.Logist. Dis,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行175–176,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,stn_inactive_2021,"DECIMAL(28,6)",stn inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行176–177,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,tfn_inactive_2021,"DECIMAL(28,6)",tfn inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行177–178,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,mdn_mdf_on_invoice,"DECIMAL(28,6)",mdn MDF on invoice,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行178–179,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6a_spe_equipmett,"DECIMAL(28,6)",L6a Spe. Equipmett,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行179–180,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,cpf_inactive_2021,"DECIMAL(28,6)",cpf inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行180–181,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,dif_inactive_2021,"DECIMAL(28,6)",dif inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行181–182,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lcf_inactive_2021,"DECIMAL(28,6)",lcf inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行182–183,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,orf_inactive_2021,"DECIMAL(28,6)",orf inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行183–184,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pdf_inactive_2021,"DECIMAL(28,6)",pdf inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行184–185,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pef_inactive_2021,"DECIMAL(28,6)",pef inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行185–186,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pmf_inactive_2021,"DECIMAL(28,6)",pmf inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行186–187,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pof_inactive_2021,"DECIMAL(28,6)",pof inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行187–188,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppf_cash_tolerance,"DECIMAL(28,6)",ppf Cash Tolerance,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行188–189,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,tff_inactive_2021,"DECIMAL(28,6)",tff inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行189–190,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,olf_othersl6b_fa,"DECIMAL(28,6)",olf OthersL6b/FA,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行190–191,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6b_bonus,"DECIMAL(28,6)",L6b-Bonus,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行191–192,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ffn_flexibility_fund,"DECIMAL(28,6)",ffn Flexibility Fund,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行192–193,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,lcn_inactive_2021,"DECIMAL(28,6)",lcn inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行193–194,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,oon_inactive_2021,"DECIMAL(28,6)",oon inactive 2021,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行194–195,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ornopenig_remod_fees,"DECIMAL(28,6)",ornOpenig&Remod Fees,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行195–196,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pdn_purch_chain_bdf,"DECIMAL(28,6)",pdn Purch. Chain BDF,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行196–197,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,frn_funding_rate,"DECIMAL(28,6)",frn Funding Rate,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行197–199,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ppd,"DECIMAL(28,6)",Price_Promotion_Discount，促销价格折扣,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行203–205,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,pld,"DECIMAL(28,6)",Price_Listing_Discount，固定价格折扣,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行205–206,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,fg,"DECIMAL(28,6)",Free_Goods，赠品金额,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行206–207,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6a_others,"DECIMAL(28,6)",l6a others,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行207–208,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ca,"DECIMAL(28,6)",价差,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行208–209,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,rebate,"DECIMAL(28,6)",返利,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行209–210,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ka_expense,"DECIMAL(28,6)",ka expense,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行210–211,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,listing_fee,"DECIMAL(28,6)",进场费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行211–212,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,promotion_activities,"DECIMAL(28,6)",promotion activities,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行212–213,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,logistics,"DECIMAL(28,6)",物流费,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行213–214,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,oos_penalty,"DECIMAL(28,6)",oos_penalty,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行214–215,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,int_agreement,"DECIMAL(28,6)",Int. Agreement,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行215–216,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,deduction,"DECIMAL(28,6)",Returned or Refunded，退货,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行216–217,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ror,"DECIMAL(28,6)",递减,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行217–218,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,l6b_others,"DECIMAL(28,6)",l6b_others,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行218–219,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,nes,"DECIMAL(28,6)",全称Net_External_Sales，即外部净销售额；,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行219–220,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_group_en_lv1,STRING,客户分类Customer Group1(英文),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行220–221,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,customer_group_en_lv2,STRING,客户分类Customer Group2(英文),SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行221–222,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,channel_customer_Permission,STRING,客户渠道（权限字段）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行224–226,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,region_customer_Permission,STRING,客户区域（权限字段）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行226–227,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,is_expired_customer,STRING,合作状态（适用所有渠道的经销商），Others/合作中/已关闭,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行229–231,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,product_function_cn,STRING,一级子品类中文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行231–232,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,sub_product_function_cn,STRING,二级子品类中文,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行232–233,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid,ship_to_party_code,STRING,送达方（客户编码）,SQL31,SQL31 Sell-in报表.xlsx / Sheet1!D31；SQL行236–238,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,company_code,STRING,Company,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,company_name_en,STRING,Company英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,bu_1,STRING,业务条线一级(Retail/Professional),SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,bu_2,STRING,业务条线二级(Beauty Care/Laundry/SP/SKP),SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,customer_code,STRING,客户code,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,customer_name,STRING,客户名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,customer_name_en,STRING,客户英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,category_name_en,STRING,品类英文,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,brand_name_en,STRING,品牌英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,Product_code,STRING,Prd Hirarchy 5(1-12),SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,product_name_en,STRING,ph5名称,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,Sales_Organization_Code,STRING,销售机构代码,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,Profit_center_id,STRING,利润中心id,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,region_en,STRING,汉高区域英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,province_en,STRING,省份英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_name,STRING,渠道层级第一级名称,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,customer_group,STRING,Customer Group,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_1,STRING,渠道层级第一级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_2,STRING,渠道层级第二级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_3,STRING,渠道层级第三级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_4,STRING,渠道层级第四级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l1,STRING,L1 External sales qt,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l2,STRING,L2 TOTAL Gross Ext.,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l3,STRING,L3 Total Net Ext.,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l4,STRING,L4 Total sales quant,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l5,STRING,L5 Gross total sales,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l6a,STRING,L6a Discounts on inv,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,total_net,STRING,Total Net 1 (L5-L6a),SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l6b,STRING,L6b Discounts off in,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l6,STRING,L6 Discounts,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l9,STRING,L9 Net total sales,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l10,STRING,L10 Commissions,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l11,STRING,L11 Transp - W/H Cst,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l12,STRING,L12 Material cost,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l13,STRING,L13 Processing cost,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l14,STRING,L14 Total manufactur,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行47–48,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,quantity_invoiced,STRING,Quantity invoiced,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行48–49,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l15,STRING,L15 Product contribu,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行49–50,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l16,STRING,L16 Additional opera,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行50–51,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17a,STRING,Advertising总和,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行51–52,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17a1,STRING,L17a1 Working media,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行52–53,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17a2,STRING,L17a2 Non-work media,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行53–54,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17b,STRING,Z0170 Total L17b,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行54–55,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17c,STRING,L17c Market Research,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行55–56,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17d,STRING,L17d Intercom charge,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行56–57,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l17,STRING,L17 Adv Prm & Mrk Re,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l18a,STRING,L18a Gross Profit 1,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行58–59,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l18b,STRING,L18b Gross Profit 2,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行59–60,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,l19,STRING,L19 Utilization vari,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行60–62,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,ds,STRING,分区时间,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行62,未声明,仅保留DDL声明,未声明,True
+${dme_cdm}.dwd_sap_ke30_data_info_bu,bu_3,STRING,业务条线三级(SKP&SP/SP/SKP),SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行67–69,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,sku_id,STRING,汉高产品编码,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行71–73,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,sku_name,STRING,汉高产品名称,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行73–74,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,region_en_lastest,STRING,最新汉高区域英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行77–78,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,province_en_lastest,STRING,最新省份英文名,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行78–79,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_name_lastest,STRING,最新渠道层级第一级名称,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行79–80,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_1_lastest,STRING,最新渠道层级第一级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行80–81,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_2_lastest,STRING,最新渠道层级第二级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行81–82,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_3_lastest,STRING,最新渠道层级第三级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行82–83,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,channel_hierarchy_4_lastest,STRING,最新渠道层级第四级,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行83–85,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,ship_to_party_code,STRING,送达方（客户编码）,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行88–89,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,ship_to_party_name_en,STRING,送达方（客户名称）,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行89–90,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_sap_ke30_data_info_bu,ship_to_party,STRING,送达方（客户编码+名称）,SQL32,SQL32 Sell-in报表.xlsx / Sheet1!D32；SQL行90–92,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,cn_or_hk,STRING,CN or HK,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行10–12,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_code,STRING,客户代码BC-R Customer Code,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_name,STRING,渠道Channel1,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_name2,STRING,渠道Channel2,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_group,STRING,客户分类Customer Group,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_group_cn_lv1,STRING,客户分类Customer Group1(中文),SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_group_cn_lv2,STRING,客户分类Customer Group2(中文),SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,ka_system_en,STRING,KA system,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,region,STRING,区域Region,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,region_en,STRING,区域英文,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,province,STRING,省份 Province,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,province_en,STRING,省份英文,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_name_en,STRING,客户名称 Customer name EN,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_name,STRING,客户名称CN,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_grade,STRING,客户等级（A/B/C/D),SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_1,STRING,渠道层级第一级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_2,STRING,渠道层级第二级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_3,STRING,渠道层级第三级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_4,STRING,渠道层级第四级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,bu_1,STRING,业务条线一级(Retail/Professional,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,bu_2,STRING,业务条线二级(Beauty Care/Laundry/SP/SKP/,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_belongto_brand,STRING,客户归属品牌,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,is_expired_customer,STRING,是否失效客户（是/否）,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,bu_3,STRING,3级bu  SKP&SP,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_name_lastest,STRING,最新渠道Channel1,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_name2_lastest,STRING,最新渠道Channel2,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,region_lastest,STRING,最新区域Region,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,region_en_lastest,STRING,最新区域英文,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,province_lastest,STRING,最新省份 Province,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,province_en_lastest,STRING,最新省份英文,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_1_lastest,STRING,最新渠道层级第一级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_2_lastest,STRING,最新渠道层级第二级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_3_lastest,STRING,最新渠道层级第三级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_hierarchy_4_lastest,STRING,最新渠道层级第四级,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_group_en_lv1,STRING,客户分类Customer Group1(英文)*,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,customer_group_en_lv2,STRING,客户分类Customer Group2(英文)*,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,ds,STRING,分区时间,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行47,未声明,仅保留DDL声明,未声明,True
+${dme_cdm}.dwd_master_data_customer_bu,cooperation_status,STRING,合作状态,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行51–53,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,channel_customer_Permission,STRING,客户渠道权限字段,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行55–57,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,region_customer_Permission,STRING,客户区域权限字段,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,City_Name,STRING,城市(中文),SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行61–63,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_customer_bu,City_TypeName,STRING,城市级别,SQL34,SQL34 Sell-in报表.xlsx / Sheet1!D34；SQL行63–64,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,sequence,STRING,序列,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行12–14,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_code,STRING,产品编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_barcode,STRING,产品条码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_name,STRING,产品名称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_name_en,STRING,英文名称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_abbreviation,STRING,产品简称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,category_name,STRING,品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,category_name_en,STRING,品类英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,brand_name,STRING,品牌,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,brand_name_en,STRING,品牌英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_function,STRING,一级子品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_line,STRING,产品线,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_pack,STRING,产品包装,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,selectable_unit,STRING,可选单位,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,box_size,STRING,箱规,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,shelf_life,STRING,保质期,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_attribute,STRING,产品属性(1234),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_type,STRING,产品种类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_status,STRING,产品有效性/状态编码(10),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,billing_date,STRING,开单日期,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,retail_price_tax,STRING,含税零售价,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_base_price,STRING,产品基价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,dt_standard_price,STRING,DT标准供价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,e_commerce_price,STRING,电商供价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,whether_commerce_product,STRING,是否为电商价格组产品（Y/N）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,remark,STRING,备注,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,colour_system,STRING,色系,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,colour_chroma,STRING,色度,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,main_colour_hue,STRING,主色调,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,sub_colour_hue,STRING,副色调,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,new_product,STRING,新品,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,premiumisation_product,STRING,高端化产品,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,core_product_line,STRING,核心产品线,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,sub_product_function,STRING,二级子品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,source_type,STRING,数据来源,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行47–48,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,category_name_en_sort,STRING,品类排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行48–49,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,brand_name_en_sort,STRING,品牌排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行49–50,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_line_sort,STRING,产品线排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行50–51,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_pack_type,STRING,产品包装分类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行51–52,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_name_sort,STRING,SKU排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行52–53,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,product_pack_ori,STRING,产品包装原始值,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行53–54,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,whether_ecom_sample_product,STRING,是否Ecom标记小样(1是0否),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行54–55,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,whether_ecom_core_product,STRING,是否Ecom标记核心品(1是0否),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行55–56,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,ph5_encoding,STRING,PH5 编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行56–57,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,morphology,STRING,形态,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,format,STRING,Format,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行58–59,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,import_or_not,STRING,是否进口,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行59–60,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,countr_of_origin,STRING,原产国,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行60–61,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,flavo_type,STRING,香型,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行61–62,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,y_status,STRING,Y status/(Y1-Y6),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行62–63,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,carton_bar_code,STRING,外箱条码 barcode,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行63–64,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,length,STRING,L (MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行64–65,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,width,STRING,W(MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行65–66,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,height,STRING,H(MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行66–67,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,volume,STRING,VOLUME (CDM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行67–68,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,gross_weight,STRING,Gross Weight(KG),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行68–69,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,bu_1,STRING,业务条线一级(Consumer/Professional),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行69–70,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,bu_2,STRING,业务条线二级(Beauty Care/Laundry/SP/SKP),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行70–71,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,ds,STRING,分区时间,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行71,未声明,仅保留DDL声明,未声明,True
+dme_cdm_dev.dwd_master_data_product_bu,sequence,STRING,序列,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行73–75,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_code,STRING,产品编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行75–76,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_barcode,STRING,产品条码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行76–77,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_name,STRING,产品名称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行77–78,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_name_en,STRING,英文名称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行78–79,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_abbreviation,STRING,产品简称,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行79–80,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,category_name,STRING,品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行80–81,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,category_name_en,STRING,品类英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行81–82,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,brand_name,STRING,品牌,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行82–83,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,brand_name_en,STRING,品牌英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行83–84,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_function,STRING,一级子品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行84–85,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_line,STRING,产品线,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行85–86,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_pack,STRING,产品包装,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行86–87,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,selectable_unit,STRING,可选单位,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行87–88,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,box_size,STRING,箱规,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行88–89,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,shelf_life,STRING,保质期,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行89–90,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_attribute,STRING,产品属性(1234),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行90–91,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_type,STRING,产品种类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行91–92,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_status,STRING,产品有效性/状态编码(10),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行92–93,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,billing_date,STRING,开单日期,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行93–94,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,retail_price_tax,STRING,含税零售价,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行94–95,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_base_price,STRING,产品基价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行95–96,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,dt_standard_price,STRING,DT标准供价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行96–97,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,e_commerce_price,STRING,电商供价（不含税）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行97–98,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,whether_commerce_product,STRING,是否为电商价格组产品（Y/N）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行98–99,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,remark,STRING,备注,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行99–100,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,colour_system,STRING,色系,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行100–101,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,colour_chroma,STRING,色度,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行101–102,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,main_colour_hue,STRING,主色调,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行102–103,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,sub_colour_hue,STRING,副色调,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行103–104,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,new_product,STRING,新品,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行104–105,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,premiumisation_product,STRING,高端化产品,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行105–106,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,core_product_line,STRING,核心产品线,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行106–107,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,sub_product_function,STRING,二级子品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行107–108,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,source_type,STRING,数据来源,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行108–109,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,category_name_en_sort,STRING,品类排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行109–110,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,brand_name_en_sort,STRING,品牌排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行110–111,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_line_sort,STRING,产品线排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行111–112,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_pack_type,STRING,产品包装分类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行112–113,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_name_sort,STRING,SKU排序字段,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行113–114,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,product_pack_ori,STRING,产品包装原始值,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行114–115,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,whether_ecom_sample_product,STRING,是否Ecom标记小样(1是0否),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行115–116,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,whether_ecom_core_product,STRING,是否Ecom标记核心品(1是0否),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行116–117,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,ph5_encoding,STRING,PH5 编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行117–118,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,morphology,STRING,形态,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行118–119,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,format,STRING,Format,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行119–120,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,import_or_not,STRING,是否进口,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行120–121,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,countr_of_origin,STRING,原产国,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行121–122,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,flavo_type,STRING,香型,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行122–123,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,y_status,STRING,Y status/(Y1-Y6),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行123–124,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,carton_bar_code,STRING,外箱条码 barcode,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行124–125,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,length,STRING,L (MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行125–126,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,width,STRING,W(MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行126–127,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,height,STRING,H(MM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行127–128,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,volume,STRING,VOLUME (CDM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行128–129,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,gross_weight,STRING,Gross Weight(KG),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行129–130,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,bu_1,STRING,业务条线一级(Consumer/Professional),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行130–131,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,bu_2,STRING,业务条线二级(Beauty Care/Laundry/SP/SKP),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行131–132,未声明,仅保留DDL声明,未声明,False
+dme_cdm_dev.dwd_master_data_product_bu,ds,STRING,分区时间,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行132,未声明,仅保留DDL声明,未声明,True
+dme_cdm_dev.dwd_master_data_product_bu,whether_pro_sample_product,STRING,"专业线mini免费产品(1是,0否)",SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行135,未声明,仅保留DDL声明,未声明,False
+dme_cdm.dwd_master_data_product_bu,whether_pro_sample_product,STRING,"专业线mini免费产品(1是,0否)",SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行136,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,old_sp_product_code,STRING,老资生堂产品编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行138–140,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,sp_product_code,STRING,资生堂产品编码,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行140–141,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,original_category_name,STRING,品类（原始）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行141–142,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,original_category_name_en,STRING,品类（原始）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行142–143,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,original_sub_product_function,STRING,子品类（原始）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行143–144,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,product_line_cn,STRING,产品线（中文）,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行144–145,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,tax_rate,STRING,税率(计算),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行145–146,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,is_product_on_sale,STRING,产品是否在售(Y|N),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行146–147,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,free_goods_remark,STRING,赠品备注,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行147–148,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,remark_3,STRING,备注3,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行148–149,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,old_category_name,STRING,旧品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行149–150,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,old_category_name_en,STRING,旧品类Eng,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行150–151,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,mkt_remark,STRING,MKT 备注,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行151–152,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,original_base_price,STRING,原基价,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行152–153,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,original_divide_current_base_price,STRING,原基价/现基价,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行153–154,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,listing_status,STRING,上市状态,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行154–155,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,category_name_en_orig,STRING,原始品类英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行157–160,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,brand_name_orig,STRING,原始品牌,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行160–161,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,brand_name_en_orig,STRING,原始品牌英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行161–162,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,product_line_en,STRING,产品线英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行165,未声明,仅保留DDL声明,未声明,False
+${dme_cdm_dev}.dwd_master_data_product_bu,sample_product,STRING,小样标签,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行172–173,未声明,仅保留DDL声明,未声明,False
+${dme_cdm_dev}.dwd_master_data_product_bu,product_function_cn,STRING,一级子品类中文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行173–174,未声明,仅保留DDL声明,未声明,False
+${dme_cdm_dev}.dwd_master_data_product_bu,sub_product_function_cn,STRING,二级子品类中文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行174–176,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,NPD,STRING,新品标签,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行179–181,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,relaunch,STRING,relaunch,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行181–182,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,is_core_product_line,STRING,核心品线(MDM),SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行182–183,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,product_class,STRING,产品分类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行183–184,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,sub_category_name,STRING,子品类,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行184–185,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,sub_category_name_en,STRING,子品类英文,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行185–186,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,product_series,STRING,产品系列,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行186–187,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,product_group,STRING,产品组,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行187–188,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,backup_field_1,STRING,备用字段1,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行188–189,未声明,仅保留DDL声明,未声明,False
+${dme_cdm}.dwd_master_data_product_bu,backup_field_2,STRING,备用字段2,SQL35,SQL35 Sell-in报表.xlsx / Sheet1!D35；SQL行189–190,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,customer_id,STRING,客户id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行11–12,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,product_id,STRING,产品id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,profit_center_id,STRING,利润中心id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,plant_id,STRING,计划id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,posting_date,STRING,过账日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,invoice_date,STRING,发票日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,order_id,STRING,订单id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,reference_document_id,STRING,参考文件,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,quantity_consumer_units,STRING,以消费单位表示的数量,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,quantity_invoiced,STRING,发票数量,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,gross_sales_price,STRING,列出的销售总价,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,material_costs,STRING,材料费,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,product_promotion_discount,STRING,产品促销折扣PPD,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,product_listing_discount,STRING,产品上市折扣PLD,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,ppd_free_goods,STRING,免费商品,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,l6a_ib_invoice,STRING,发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,l6a_ib_area,STRING,区域,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,product_hirachy_number,STRING,产品hirachy数,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,transportation_invoice,STRING,运输发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,warehouse_invoice,STRING,出库发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,adn_promotion_bonus,STRING,发票激励奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,cbn_imp_fund,STRING,发票上的合作改善基金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,abf_assortment_bonus,STRING,发票上的产品组合奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,abn_assortment_bonus,STRING,发票上的分类奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,cbf_imp_fund,STRING,发票外合作改善基金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,ecf_process_servic,STRING,处理发票外服务,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,gbf_growth_bonus,STRING,发票外的增长奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,hqf_hq_services,STRING,总部服务发票外,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,listing_fees,STRING,发票上的永久挂牌费,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,selling_effort,STRING,批发商在发票上的销售努力,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,terms_payment,STRING,发票付款条件,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,promotion_bonus_invoice,STRING,折扣促销发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,logistics_invoice,STRING,物流发票外,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,euf_agreement_bonus,STRING,国际协议奖金折扣发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,create_date,STRING,创建日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,created,STRING,创建者,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行46–47,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,billing_type,STRING,计费类型,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行47–48,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,consumer_allowance,STRING,消费津贴,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行48–49,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,channel,STRING,渠道,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行49–50,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,net_gross_sales,STRING,净销售总额,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行50–52,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,ds,STRING,分区时间,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行52,未声明,仅保留DDL声明,未声明,True
+dme_ods_dev.s_sap_ke24_sale_info,customer_id,STRING,客户id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行56–57,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,product_id,STRING,产品id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行57–58,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,profit_center_id,STRING,利润中心id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行58–59,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,plant_id,STRING,计划id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行59–60,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,posting_date,STRING,过账日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行60–61,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,invoice_date,STRING,发票日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行61–62,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,order_id,STRING,订单id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行62–63,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,reference_document_id,STRING,参考文件,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行63–64,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,quantity_consumer_units,STRING,以消费单位表示的数量,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行64–65,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,quantity_invoiced,STRING,发票数量,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行65–66,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,gross_sales_price,STRING,列出的销售总价,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行66–67,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,material_costs,STRING,材料费,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行67–68,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,product_promotion_discount,STRING,产品促销折扣PPD,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行68–69,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,product_listing_discount,STRING,产品上市折扣PLD,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行69–70,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,ppd_free_goods,STRING,免费商品,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行70–71,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,l6a_ib_invoice,STRING,发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行71–72,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,l6a_ib_area,STRING,区域,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行72–73,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,product_hirachy_number,STRING,产品hirachy数,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行73–74,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,transportation_invoice,STRING,运输发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行74–75,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,warehouse_invoice,STRING,出库发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行75–76,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,adn_promotion_bonus,STRING,发票激励奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行76–77,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,cbn_imp_fund,STRING,发票上的合作改善基金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行77–78,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,abf_assortment_bonus,STRING,发票上的产品组合奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行78–79,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,abn_assortment_bonus,STRING,发票上的分类奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行79–80,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,cbf_imp_fund,STRING,发票外合作改善基金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行80–81,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,ecf_process_servic,STRING,处理发票外服务,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行81–82,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,gbf_growth_bonus,STRING,发票外的增长奖金,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行82–83,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,hqf_hq_services,STRING,总部服务发票外,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行83–84,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,listing_fees,STRING,发票上的永久挂牌费,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行84–85,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,selling_effort,STRING,批发商在发票上的销售努力,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行85–86,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,terms_payment,STRING,发票付款条件,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行86–87,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,promotion_bonus_invoice,STRING,折扣促销发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行87–88,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,logistics_invoice,STRING,物流发票外,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行88–89,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,euf_agreement_bonus,STRING,国际协议奖金折扣发票,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行89–90,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,create_date,STRING,创建日期,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行90–91,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,created,STRING,创建者,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行91–92,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,billing_type,STRING,计费类型,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行92–93,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,consumer_allowance,STRING,消费津贴,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行93–94,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,channel,STRING,渠道,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行94–95,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,net_gross_sales,STRING,净销售总额,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行95–97,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,ds,STRING,分区时间,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行97,未声明,仅保留DDL声明,未声明,True
+dme_ods.s_sap_ke24_sale_info,document_num,STRING,记录编码,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行99–101,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,document_num,STRING,记录编码,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行104–106,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,dpf_deduction_provis,STRING,Deduction,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行113–114,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,rpf_returns_provisio,STRING,ROR退货预估,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行114–116,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppf_prod_prom_disc,STRING,Product Promotion Discount off invoice,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行119–120,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lff_prod_listing_fee,STRING,Product Listing Fee (one shot) off invoice,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行120–121,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,fff_flexibility_fund,STRING,,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行121–122,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pxf_prod_except_disc,STRING,Product Exeptional Discount off invoice,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行122–124,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,Sales_Organization_Code,STRING,销售机构代码,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行127–129,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_sap_ke24_sale_info,mark_up_ii,STRING,mark_up_ii,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行129–130,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,Sales_Organization_Code,STRING,销售机构代码,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行132–134,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_sap_ke24_sale_info,mark_up_ii,STRING,mark_up_ii,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行134–135,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pxd_prod_except_disc,STRING,pxd_prod_except_disc,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行137–139,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pxd_prodexcptobs_gds,STRING,pxd ProdExcptObs gds,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行139–140,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pxd_prodexcptsusppr,STRING,pxd ProdExcptSuspPr,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行140–141,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lfn_prod_listing_fee,STRING,lfn Prod Listing Fee,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行141–142,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pvd_prod_volume_disc,STRING,pvd Prod Volume Disc,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行142–143,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,qln_logistics_on_inv,STRING,qln Logistics on inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行143–144,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ecn_process_service,STRING,ecn Process Service,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行144–145,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,cpn_cust_pick_on_inv,STRING,cpn Cust.Pick on inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行145–146,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,hqn_headqua_services,STRING,hqn HeadQua Services,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行146–147,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,oln_othrs_line_6a,STRING,oln Othrs line 6a,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行147–148,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ton_terms_of_payment,STRING,ton Terms of Payment,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行148–149,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,psf_prodpricelistdis,STRING,psf ProdPriceListDis,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行149–150,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pvf_prodvolumedisc,STRING,pvf ProdVolumeDisc,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行150–151,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,oof_others_off_inv,STRING,oof Others off inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行151–152,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ccf_cupn_cust_of_Inv,STRING,ccf Cupn Cust of Inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行152–153,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,cnf_cupn_ntnl_of_Inv,STRING,cnf Cupn Ntnl of Inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行153–154,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lmf_lma_6b,STRING,lmf LMA 6b,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行154–155,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,Item_category_group,STRING,是否小样,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行157–159,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,last_min_adjustmt_l5,STRING,Last Min Adjustmt L5,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行161–162,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lmn_lma_line_6a,STRING,lmn LMA line 6a,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行162–164,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,packaging_costs,STRING,Packaging Costs,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行166–168,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,bad_debts,STRING,Bad Debts,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行168–169,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,merchandising_l10,STRING,Merchandising L10,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行169–170,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,py_l6_adjustment,STRING,PY L6 Adjustment,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行170–171,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,commission_off_inv,STRING,Commission off Inv %,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行171–172,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,fixed_amountsline_10,STRING,Fixed AmountsLine 10,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行172–173,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,minigroup,STRING,Minigroup,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行173–174,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,materialcosts_varian,STRING,MaterialCosts Varian,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行174–175,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lma_line_12,STRING,LMA Line 12,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行175–176,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ic_cog_hedging,STRING,IC CoG - Hedging,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行176–177,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,processcosts_subcont,STRING,ProcessCosts Subcont,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行177–178,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,processcosts_variabl,STRING,ProcessCosts variabl,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行178–179,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,processcosts_varianc,STRING,ProcessCosts Varianc,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行179–180,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,unusual_manfcosts,STRING,unusual ManfCosts,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行180–181,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,misc_costs,STRING,Misc. Costs,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行181–182,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,processcosts_fix,STRING,ProcessCosts fix,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行182–183,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lma_line_13,STRING,LMA Line 13,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行183–184,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,creator,STRING,creator,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行187–188,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,modifier,STRING,modifier,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行188–189,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,creator_nickname,STRING,creator_nickname,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行189–190,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,modifier_nickname,STRING,modifier_nickname,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行190–191,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,create_time,STRING,create_time,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行191–192,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,modify_time,STRING,modify_time,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行192–193,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,qbi_system_upload_id,STRING,qbi_system_upload_id,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行193–195,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,reference_item_no,STRING,Reference item no.,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行198–199,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,sales_order_item,STRING,Sales Order Item,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行199–201,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ccn_cupn_cust_on_inv,STRING,ccn Cupn Cust.on Inv,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行204–205,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,din_inactive_2021,STRING,din inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行205–206,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,eun_agreement_bonus,STRING,eun Agreement Bonus,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行206–207,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ped_inactive_2021,STRING,ped inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行207–208,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pld_pricelist_disc_2,STRING,pld PriceList Disc 2,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行208–209,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pln_perm_listingfees,STRING,pln Perm.ListingFees,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行209–210,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pmn_purch_chain_bmc,STRING,pmn Purch Chain BMC,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行210–211,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppd_prod_prom_disc_2,STRING,ppd Prod.Prom.Disc 2,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行211–212,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppd_outlet_rebate,STRING,PPD outlet rebate,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行212–213,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppd_promotion_rebate,STRING,PPD promotion rebate,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行213–214,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppd_trade_fairs,STRING,PPD trade fairs,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行214–215,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pod_prod_logist_dis,STRING,pod Prod.Logist. Dis,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行215–216,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,stn_inactive_2021,STRING,stn inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行216–217,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,tfn_inactive_2021,STRING,tfn inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行217–218,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,mdn_mdf_on_invoice,STRING,mdn MDF on invoice,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行218–219,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,l6a_spe_equipmett,STRING,L6a Spe. Equipmett,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行219–220,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,cpf_inactive_2021,STRING,cpf inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行220–221,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,dif_inactive_2021,STRING,dif inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行221–222,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lcf_inactive_2021,STRING,lcf inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行222–223,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,orf_inactive_2021,STRING,orf inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行223–224,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pdf_inactive_2021,STRING,pdf inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行224–225,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pef_inactive_2021,STRING,pef inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行225–226,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pmf_inactive_2021,STRING,pmf inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行226–227,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pof_inactive_2021,STRING,pof inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行227–228,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ppf_cash_tolerance,STRING,ppf Cash Tolerance,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行228–229,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,tff_inactive_2021,STRING,tff inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行229–230,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,olf_othersl6b_fa,STRING,olf OthersL6b/FA,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行230–231,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,l6b_bonus,STRING,L6b-Bonus,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行231–232,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ffn_flexibility_fund,STRING,ffn Flexibility Fund,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行232–233,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,lcn_inactive_2021,STRING,lcn inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行233–234,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,oon_inactive_2021,STRING,oon inactive 2021,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行234–235,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,ornopenig_remod_fees,STRING,ornOpenig&Remod Fees,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行235–236,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,pdn_purch_chain_bdf,STRING,pdn Purch. Chain BDF,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行236–237,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke24_sale_info,frn_funding_rate,STRING,frn Funding Rate,SQL36,SQL36 Sell-in报表.xlsx / Sheet1!D36；SQL行237–239,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,company_code,STRING,Company,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,customer_code,STRING,customer_code,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Product,STRING,产品code,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Period,STRING,月,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Year,STRING,年,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Prd_Hirarchy_5,STRING,Prd Hirarchy 5(1-12),SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Sales_Organization_Code,STRING,销售机构代码,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,Profit_center_id,STRING,利润中心id,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l1,STRING,L1 External sales qt,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l2,STRING,L2 TOTAL Gross Ext.,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l3,STRING,L3 Total Net Ext.,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l4,STRING,L4 Total sales quant,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l5,STRING,L5 Gross total sales,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l6a,STRING,L6a Discounts on inv,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,total_net,STRING,Total Net 1 (L5-L6a),SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l6b,STRING,L6b Discounts off in,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l6,STRING,L6 Discounts,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l9,STRING,L9 Net total sales,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l10,STRING,L10 Commissions,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l11,STRING,L11 Transp - W/H Cst,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行31–32,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l12,STRING,L12 Material cost,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行32–33,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l13,STRING,L13 Processing cost,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行33–34,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l14,STRING,L14 Total manufactur,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行34–35,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,quantity_invoiced,STRING,Quantity invoiced,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行35–36,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l15,STRING,L15 Product contribu,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行36–37,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l16,STRING,L16 Additional opera,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行37–38,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l19,STRING,L19 Utilization vari,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行38–39,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l18a,STRING,L18a Gross Profit 1,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行39–40,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17a1,STRING,L17a1 Working media,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行40–41,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17a2,STRING,L17a2 Non-work media,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行41–42,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17d,STRING,L17d Intercom charge,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行42–43,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17b,STRING,Z0170 Total L17b,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行43–44,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17c,STRING,L17c Market Research,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行44–45,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l17,STRING,L17 Adv Prm & Mrk Re,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行45–46,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,l18b,STRING,L18b Gross Profit 2,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行46–48,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,ds,STRING,分区时间,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行48,未声明,仅保留DDL声明,未声明,True
+${dme_ods}.s_sap_ke30_data_info,creator,STRING,creator,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行50–51,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,modifier,STRING,modifier,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行51–52,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,creator_nickname,STRING,creator_nickname,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行52–53,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,modifier_nickname,STRING,modifier_nickname,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行53–54,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,create_time,STRING,create_time,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行54–55,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,modify_time,STRING,modify_time,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行55–56,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,qbi_system_upload_id,STRING,qbi_system_upload_id,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行56–58,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_sap_ke30_data_info,ship_to_party,STRING,送达方（客户编码+名称）,SQL37,SQL37 Sell-in报表.xlsx / Sheet1!D37；SQL行61–63,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,Material,STRING,产品code,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行11–12,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,Material_Description,STRING,产品名称英文,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行12–14,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,ds,STRING,分区时间,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行14,未声明,仅保留DDL声明,未声明,True
+${dme_ods}.s_professional_product_sample_info,creator,STRING,creator,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,modifier,STRING,modifier,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,creator_nickname,STRING,creator_nickname,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,modifier_nickname,STRING,modifier_nickname,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,create_time,STRING,create_time,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,modify_time,STRING,modify_time,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_professional_product_sample_info,qbi_system_upload_id,STRING,qbi_system_upload_id,SQL38,SQL38 Sell-in报表.xlsx / Sheet1!D38；SQL行22–24,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,id,STRING,id,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行12–14,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,sales_order,STRING,订单号,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,months,STRING,月份,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,creator,STRING,creator,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,modifier,STRING,modifier,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,create_time,STRING,create_time,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,modify_time,STRING,modify_time,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行19–20,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,qbi_system_upload_id,BIGINT,qbi_system_upload_id,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行20–22,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_profitability_slow_moving_mapping,ds,STRING,分区时间,SQL39,SQL39 Sell-in报表.xlsx / Sheet1!D39；SQL行23,未声明,仅保留DDL声明,未声明,True
+${dme_ods}.s_ph5_category_brand_laundry,idh_code,STRING,idh_code,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行7–9,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,idh_name,STRING,idh_name,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行9–10,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,ph5,STRING,ph5_code,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行10–11,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,pc,STRING,Profit_center_id,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行11–12,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,category,STRING,品类名称,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,brand,STRING,品牌名称,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,ds,STRING,分区时间,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行16–18,未声明,仅保留DDL声明,未声明,True
+${dme_ods}.s_ph5_category_brand_laundry,creator,STRING,creator,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,modifier,STRING,modifier,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,creator_nickname,STRING,creator_nickname,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,modifier_nickname,STRING,modifier_nickname,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,create_time,STRING,create_time,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,modify_time,STRING,modify_time,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_laundry,qbi_system_upload_id,STRING,qbi_system_upload_id,SQL40,SQL40 Sell-in报表.xlsx / Sheet1!D40；SQL行29–31,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,idh_code,STRING,idh_code,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行11–12,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,idh_name,STRING,idh_name,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,ph5,STRING,ph5_code,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,category,STRING,品类名称,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,brand,STRING,品牌名称,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,bu,STRING,,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行16–18,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,ds,STRING,分区时间,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行18,未声明,仅保留DDL声明,未声明,True
+${dme_ods}.s_ph5_category_brand_professional,creator,STRING,creator,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行20–21,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,modifier,STRING,modifier,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行21–22,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,creator_nickname,STRING,creator_nickname,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行22–23,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,modifier_nickname,STRING,modifier_nickname,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行23–24,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,create_time,STRING,create_time,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,modify_time,STRING,modify_time,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+${dme_ods}.s_ph5_category_brand_professional,qbi_system_upload_id,STRING,qbi_system_upload_id,SQL41,SQL41 Sell-in报表.xlsx / Sheet1!D41；SQL行26–28,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,idh,STRING,idh 编码,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行12–13,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,ph5_code,STRING,ph5 编码,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行13–14,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,ph5_name,STRING,ph5 名称,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行14–15,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,creator,STRING,creator,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行15–16,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,modifier,STRING,modifier,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行16–17,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,create_time,STRING,create_time,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行17–18,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,modify_time,STRING,modify_time,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行18–19,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,qbi_system_upload_id,BIGINT,qbi_system_upload_id,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行19–21,未声明,仅保留DDL声明,未声明,False
+dme_ods.s_master_data_product_idh_ph5_mapping,ds,STRING,分区时间,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行21,未声明,仅保留DDL声明,未声明,True
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,idh,STRING,idh 编码,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行24–25,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,ph5_code,STRING,ph5 编码,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行25–26,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,ph5_name,STRING,ph5 名称,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行26–27,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,creator,STRING,creator,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行27–28,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,modifier,STRING,modifier,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行28–29,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,create_time,STRING,create_time,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行29–30,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,modify_time,STRING,modify_time,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行30–31,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,qbi_system_upload_id,BIGINT,qbi_system_upload_id,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行31–33,未声明,仅保留DDL声明,未声明,False
+dme_ods_dev.s_master_data_product_idh_ph5_mapping,ds,STRING,分区时间,SQL42,SQL42 Sell-in报表.xlsx / Sheet1!D42；SQL行33,未声明,仅保留DDL声明,未声明,True

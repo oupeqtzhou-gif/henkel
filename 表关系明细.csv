@@ -1,0 +1,427 @@
+﻿id,source,target,label,view,evidence,status,relation,sqlSources,snippet,condition
+E0122,table:s_sap_ke24_sale_info,table:ke24_data_tmp,加工血缘,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,transform,"[""MID""]","205:    ,nvl(cast(regexp_replace(t1.frn_funding_rate             ,',','')      as decimal(28, 6)),0)   as  frn_funding_rate              
+206:    ,t1.ship_to_party              -- 送达方（客户） 
+207: 
+208:  from ${dme_ods}.s_sap_ke24_sale_info t1
+209:  where t1.ds = max_pt('${dme_ods}.s_sap_ke24_sale_info')
+210:    and (
+211:      -- 取laundry 数据",数值清洗、BU识别；源数据取数规则见MID完整SQL
+E0123,table:ke24_data_tmp,table:ke24_ke30_data_tmp,加工血缘,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,transform,"[""MID""]","48: --**取自手工数据部分：2023年直取BU字段，2024年不区分
+49: 
+50: with
+51: ke24_data_tmp as (
+52:  select
+53:    t1.customer_id -- 客户id
+54:    ,t1.product_id -- 产品id",GES=gross_sales_price+last_min_adjustmt_l5；NGS=GES-L6a（L6a已反转符号）
+E0124,table:dwd_sap_ke30_data_info_bu,table:ke24_ke30_data_tmp,加工血缘,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,transform,"[""MID""]","562:   ,cast(a.l6b as decimal(28,6)) as l6b_others
+563:   ,cast(a.l6b as decimal(28,6)) as l6b
+564:   ,ship_to_party_code             -- 送达方（客户编码） 
+565: from ${dme_cdm_dev}.dwd_sap_ke30_data_info_bu a
+566:  where (a.Sales_Organization_Code='Not ' or a.Sales_Organization_Code regexp '未分配')
+567:  and a.ds<>''
+568: --  and ( case when a.bu_2 in ('Laundry','Beauty Care') then a.ds>='202407'",UNION ALL；Sales_Organization_Code='Not ' 或匹配'未分配'；GES=0，NGS=-L6a；分配到月末
+E0125,table:ke24_ke30_data_tmp,table:dwd_sap_ke24_sale_info_bu_mid,加工血缘,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,transform,"[""MID""]","228:   
+229: )
+230: ,
+231: ke24_ke30_data_tmp as(
+232: select
+233:   ds
+234:   ,customer_id",写入${dme_cdm_dev}；ngs映射sku_ngs_amt；保留2021年起数据
+E0126,table:dwd_master_data_customer_bu,table:dwd_sap_ke24_sale_info_bu_mid,JOIN 关联,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,join,"[""MID""]","940:       ,channel_customer_Permission -- 客户渠道（权限字段）
+941:       ,region_customer_Permission  -- 客户区域（权限字段）
+942:       ,is_expired_customer  -- 合作状态（适用所有渠道的经销商），Others/合作中/已关闭
+943:     from ${dme_cdm}.dwd_master_data_customer_bu
+944:     where ds like '%01'
+945:   )  t2
+946:  on case when  substr(t1.ds,1,6) ='202308' and t1.bu_2='Beauty Care'",客户编码（含202308特例）+bu_1+bu_2+月份；客户主数据取每月01快照
+E0127,table:dwd_master_data_product_bu,table:dwd_sap_ke24_sale_info_bu_mid,JOIN 关联,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,join,"[""MID""]","978:       ,product_function_cn      -- 一级子品类中文
+979:       ,sub_product_function_cn  -- 二级子品类中文
+980:       ,ds
+981:     from ${dme_cdm}.dwd_master_data_product_bu
+982:     where ds <> '1'
+983:    -- and bu_2='Laundry'
+984:   ) t3",t1.product_id=t3.product_code AND t1.ds=t3.ds；BU关联条件已注释；需验证复合键唯一性
+E0128,table:s_professional_product_sample_info,table:dwd_sap_ke24_sale_info_bu_mid,JOIN 关联,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,join,"[""MID""]","989:  left join (
+990:     select
+991:       product_code,bu -- ,if(upper(trim(STD))='YADV',1,0) AS Sample_flag
+992:     from ${dme_ods}.s_professional_product_sample_info
+993:     where ds =max_pt('${dme_ods}.s_professional_product_sample_info')
+994:     group by product_code,bu
+995:  ) t4",产品编码+BU；产品编码/BU分组去重；最新分区
+E0129,table:s_profitability_slow_moving_mapping,table:dwd_sap_ke24_sale_info_bu_mid,JOIN 关联,"[""table"", ""knowledge""]",dwd_sap_ke24_sale_info_bu_mid.sql,无问题,join,"[""MID""]","998:  left join(--关联取到慢流品订单
+999:     select distinct months,sales_order
+1000:        ,dense_rank() over(partition by months order by cast(qbi_system_upload_id as bigint) desc) as rn
+1001:     from dme_ods.s_profitability_slow_moving_mapping
+1002:     where ds = max_pt('dme_ods.s_profitability_slow_moving_mapping')
+1003:   ) a
+1004:   on substr(t1.ds,1,6) = a.months",月份+销售订单；dense_rank取每月最新上传批次rn=1
+E0130,table:s_sap_ke30_data_info,table:dwd_sap_ke30_data_info_bu,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,transform,"[""SQL33""]","76:        if(t1.ship_to_party = 'Not assigned',t1.ship_to_party,replace(substr(t1.ship_to_party, 1, 11), ' ', '')) as   ship_to_party_code,           -- 送达方（客户编码） 
+77:        if(t1.ship_to_party = 'Not assigned',t1.ship_to_party,substr(t1.ship_to_party, 12))                      as   ship_to_party_name_en,           -- 送达方（客户名称） 
+78:        t1.ship_to_party         as   ship_to_party  -- 送达方（客户编码+名称） 
+79:   from ${dme_ods}.s_sap_ke30_data_info t1 
+80:   where t1.ds = max_pt('${dme_ods}.s_sap_ke30_data_info')
+81:   and substr(regexp_replace(t1.Profit_center_id ,'(\\D+)',''),5,6)<>'841310' -- Laundry 841310数据计算指标时剔除,剔除841310,L做内部销售
+82: )",KE30清洗；利润中心841310排除；2021年起
+E0131,table:dwd_master_data_customer_bu,table:dwd_sap_ke30_data_info_bu,JOIN 关联,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,join,"[""SQL33""]","203:      
+204:       --  or (t1.Profit_center_id in ('857034','857035','857037','857038') or (t1.Sales_Organization_Code ='8620' and t1.Profit_center_id='841110'))  -- Beauty Care 数据
+205:        ) t1
+206: left join ${dme_cdm}.dwd_master_data_customer_bu t2
+207:        on t1.customer_code= t2.customer_code
+208:       and t1.bu_1 = t2.bu_1
+209:       and t1.bu_2 = t2.bu_2",customer_code + bu_1 + bu_2 +月份；每月01快照
+E0132,table:s_ph5_category_brand_laundry,table:dwd_sap_ke30_data_info_bu,JOIN 关联,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,join,"[""SQL33""]","217:          ,brand       --  品牌名称  
+218:          ,'Laundry' AS bu_2
+219:          ,row_number()over(partition by ph5 order by idh_code desc) rn
+220:        from ${dme_ods}.s_ph5_category_brand_laundry
+221:        where ds =max_pt('${dme_ods}.s_ph5_category_brand_laundry')
+222:        union 
+223:        select ",PH5及BU，取最新分区
+E0133,table:s_ph5_category_brand_professional,table:dwd_sap_ke30_data_info_bu,JOIN 关联,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,join,"[""SQL33""]","226:          ,brand       --  品牌名称  
+227:          ,bu AS bu_2
+228:          ,row_number()over(partition by ph5 order by idh_code desc) rn
+229:        from ${dme_ods}.s_ph5_category_brand_professional
+230:        where ds =max_pt('${dme_ods}.s_ph5_category_brand_professional')
+231:        union
+232:         select",PH5及BU，取最新分区
+E0134,table:s_master_data_product_idh_ph5_mapping,table:dwd_sap_ke30_data_info_bu,JOIN 关联,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,join,"[""SQL33""]","241:             ,ph5_code   --ph5编码
+242:             ,ph5_name   --ph5名称
+243:             ,if(ph5_name is null or ph5_name ='',0,1) as priority1
+244:           from dme_ods.s_master_data_product_idh_ph5_mapping 
+245:           where ds = '${bizdate}'
+246:          ) a
+247:         left join(",idh映射PH5，再与产品主数据组合，产品码+BU
+E0135,table:dwd_master_data_product_bu,table:dwd_sap_ke30_data_info_bu,JOIN 关联,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D33,无问题,join,"[""SQL33""]","250:             ,category_name_en   --品类英文
+251:             ,brand_name_en  --品牌英文
+252:             ,if(category_name_en = 'Others',0,1) + if(brand_name_en = 'Others',0,1) priority2 --品类英文+品牌英文
+253:            from ${dme_cdm}.dwd_master_data_product_bu 
+254:            where ds =max_pt('${dme_cdm}.dwd_master_data_product_bu')
+255:            and bu_2='Beauty Care'
+256:          ) b ",嵌套映射：a.idh=b.product_code；Beauty Care最新分区
+E0136,table:dwd_sap_ke24_sale_info_bu_mid,table:dwd_sap_ke24_sale_info_bu,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D28,无问题,transform,"[""SQL28""]","246:   ,sub_product_function_cn    -- 二级子品类中文 
+247:   ,ship_to_party_code              -- 送达方（客户编码） 
+248:   ,to_char(to_date(substr(posting_date,1,10),'yyyy-mm-dd'),'yyyymmdd') as ds 
+249: from ${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid
+250: where ds=max_pt('${dme_cdm}.dwd_sap_ke24_sale_info_bu_mid')
+251: and to_char(to_date(substr(posting_date,1,10),'yyyy-mm-dd'),'yyyymmdd') <= '${bizdate}'
+252: ;",读${dme_cdm}最新分区；posting_date<=bizdate。MID写${dme_cdm_dev}，参数同环境关系待确认。
+E0137,table:dwd_sap_ke24_sale_info_bu,table:tb_ngs_sku_sales_summary_bu,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D26,无问题,transform,"[""SQL26""]","91:    ,cast(l6a_others as DECIMAL(28,6))       as l6a_others     -- l6a others 
+92:    ,order_id                                as order_id       -- 订单id 
+93:    ,billing_type                            as billing_type   -- 计费类型 
+94: from ${dme_cdm}.dwd_sap_ke24_sale_info_bu a
+95: where ds >='20200101'
+96:  and to_char(posting_date,'yyyymmdd') <='${bizdate}'  --后期需要调整参数，当前页面只要20年数据，后面调整为进
+97: -- and coalesce(customer_id,'')<>''","金额转DECIMAL(28,6)；ds>=20200101；过账日期<=bizdate；渠道层级处理"
+E0138,table:sell_in_mapping_time,bi:Sell_in总览_重要性矩阵渠道维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D2,无问题,join,"[""SQL02"", ""SQL19""]","28:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+29:     FROM
+30:       tb_ngs_sku_sales_summary_bu
+31:     WHERE day in (SELECT time_now FROM sell_in_mapping_time where ${mapping_time:mapping_time})
+32:       AND ${customer_id:customer_id}
+33:       AND ${sku_id:sku_id}
+34:       AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0139,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_重要性矩阵渠道维度,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D2,无问题,transform,"[""SQL02"", ""SQL19""]","27:       ) AS sku_ngs_amt
+28:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+29:     FROM
+30:       tb_ngs_sku_sales_summary_bu
+31:     WHERE day in (SELECT time_now FROM sell_in_mapping_time where ${mapping_time:mapping_time})
+32:       AND ${customer_id:customer_id}
+33:       AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0140,bi:Sell_in总览_重要性矩阵渠道维度,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D2；Sell-in报表.xlsx / Sheet1!D19,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0141,table:sell_in_mapping_time,bi:Sell_in总览_SELL_IN销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D3,无问题,join,"[""SQL03""]","17:           ) as ngs -- 本期的销额
+18:     --   sum(sku_ngs_amt) as ngs -- 本期的销额
+19:     FROM tb_ngs_sku_sales_summary_bu
+20:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time where ${mapping_time:mapping_time}   AND ${type:type})
+21:     AND ${customer_id:customer_id}
+22:     AND ${sku_id:sku_id}
+23:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0142,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_SELL_IN销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D3,无问题,transform,"[""SQL03""]","16:             end
+17:           ) as ngs -- 本期的销额
+18:     --   sum(sku_ngs_amt) as ngs -- 本期的销额
+19:     FROM tb_ngs_sku_sales_summary_bu
+20:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time where ${mapping_time:mapping_time}   AND ${type:type})
+21:     AND ${customer_id:customer_id}
+22:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0143,bi:Sell_in总览_SELL_IN销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D3,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0144,table:sell_in_mapping_time,bi:Sell_in总览_客户数量,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D4,无问题,join,"[""SQL04""]","13:       '客户数量' AS INDEX,
+14:       count(DISTINCT customer_id)  as customer_counts
+15:     FROM tb_ngs_sku_sales_summary_bu
+16:     WHERE day in ( select time_now from sell_in_mapping_time where ${mapping_time:mapping_time})
+17:     AND ${customer_id:customer_id}
+18:     AND ${sku_id:sku_id}
+19:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0145,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_客户数量,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D4,无问题,transform,"[""SQL04""]","12:     SELECT
+13:       '客户数量' AS INDEX,
+14:       count(DISTINCT customer_id)  as customer_counts
+15:     FROM tb_ngs_sku_sales_summary_bu
+16:     WHERE day in ( select time_now from sell_in_mapping_time where ${mapping_time:mapping_time})
+17:     AND ${customer_id:customer_id}
+18:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0146,bi:Sell_in总览_客户数量,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D4,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0147,table:sell_in_mapping_time,bi:Sell_in总览_客户平均销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D5,无问题,join,"[""SQL05""]","20:     --   count(DISTINCT customer_id),
+21:     --   sum(sku_ngs_amt)/count(DISTINCT customer_id) as avg_sales
+22:     FROM  tb_ngs_sku_sales_summary_bu
+23:     WHERE day in ( select time_now from sell_in_mapping_time where ${mapping_time:mapping_time})
+24:     AND ${customer_id:customer_id}
+25:     AND ${sku_id:sku_id}
+26:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0148,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_客户平均销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D5,无问题,transform,"[""SQL05""]","19:     --   sum(sku_ngs_amt),
+20:     --   count(DISTINCT customer_id),
+21:     --   sum(sku_ngs_amt)/count(DISTINCT customer_id) as avg_sales
+22:     FROM  tb_ngs_sku_sales_summary_bu
+23:     WHERE day in ( select time_now from sell_in_mapping_time where ${mapping_time:mapping_time})
+24:     AND ${customer_id:customer_id}
+25:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0149,bi:Sell_in总览_客户平均销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D5,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0150,table:sell_in_mapping_time,bi:Sell_in总览_新品占比,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D6,无问题,join,"[""SQL06""]","21:             end
+22:         ) as rio
+23:     FROM tb_ngs_sku_sales_summary_bu
+24:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time where  ${mapping_time:mapping_time})
+25:     AND ${customer_id:customer_id}
+26:     AND ${sku_id:sku_id}
+27:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0151,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_新品占比,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D6,无问题,transform,"[""SQL06""]","20:             when ${'2':curr_type} then ges
+21:             end
+22:         ) as rio
+23:     FROM tb_ngs_sku_sales_summary_bu
+24:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time where  ${mapping_time:mapping_time})
+25:     AND ${customer_id:customer_id}
+26:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0152,bi:Sell_in总览_新品占比,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D6,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0153,table:sell_in_mapping_time,bi:Sell_in总览_核心产品线占比,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D7,无问题,join,"[""SQL07""]","22:             end
+23:         ) as rio
+24:     FROM tb_ngs_sku_sales_summary_bu
+25:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time  where  ${mapping_time:mapping_time})
+26:     AND ${customer_id:customer_id}
+27:     AND ${sku_id:sku_id}
+28:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0154,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_核心产品线占比,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D7,无问题,transform,"[""SQL07""]","21:             when ${'2':curr_type} then ges
+22:             end
+23:         ) as rio
+24:     FROM tb_ngs_sku_sales_summary_bu
+25:     WHERE day IN ( SELECT  time_now  from  sell_in_mapping_time  where  ${mapping_time:mapping_time})
+26:     AND ${customer_id:customer_id}
+27:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0155,bi:Sell_in总览_核心产品线占比,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D7,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0156,table:sell_in_mapping_time,bi:Sell_in总览_整体SELL_IN销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D8,无问题,join,"[""SQL08""]","21:         ) as sku_ngs_amt
+22:     from
+23:       tb_ngs_sku_sales_summary_bu a
+24:     inner join sell_in_mapping_time b 
+25:   on a.day = b.time_now
+26:     AND b.type = 'A.年'
+27:     AND b.time_now <= (select max(time_now) from sell_in_mapping_time WHERE ${mapping_time:mapping_time} AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0157,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_整体SELL_IN销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D8,无问题,transform,"[""SQL08""]","20:             else 0 end
+21:         ) as sku_ngs_amt
+22:     from
+23:       tb_ngs_sku_sales_summary_bu a
+24:     inner join sell_in_mapping_time b 
+25:   on a.day = b.time_now
+26:     AND b.type = 'A.年'",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0158,bi:Sell_in总览_整体SELL_IN销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D8,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0159,table:sell_in_mapping_time,bi:Sell_in总览_整体销额趋势,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D9,无问题,join,"[""SQL09""]","21:           ) as sku_ngs_amt
+22:     FROM
+23:       tb_ngs_sku_sales_summary_bu t1
+24:       LEFT JOIN sell_in_mapping_time t2 
+25:       ON t1.day = t2.time_now
+26:       AND ${t2.type:type}
+27:       WHERE t1.day <= (select max(time_now) from sell_in_mapping_time where ${mapping_time:mapping_time} AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0160,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_整体销额趋势,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D9,无问题,transform,"[""SQL09""]","20:           else 0 end
+21:           ) as sku_ngs_amt
+22:     FROM
+23:       tb_ngs_sku_sales_summary_bu t1
+24:       LEFT JOIN sell_in_mapping_time t2 
+25:       ON t1.day = t2.time_now
+26:       AND ${t2.type:type}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0161,bi:Sell_in总览_整体销额趋势,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D9,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0162,table:sell_in_mapping_time,bi:Sell_in总览_各品类Sell_in销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D10,无问题,join,"[""SQL10""]","40:         ) as sku_ngs_amt
+41:   FROM
+42:     tb_ngs_sku_sales_summary_bu a
+43:     inner join sell_in_mapping_time b 
+44:   on a.day = b.time_now
+45:     AND b.type = 'A.年'
+46:     AND b.time_now <= (select max(time_now) from sell_in_mapping_time WHERE ${mapping_time:mapping_time} AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0163,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各品类Sell_in销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D10,无问题,transform,"[""SQL10""]","39:             else 0 end
+40:         ) as sku_ngs_amt
+41:   FROM
+42:     tb_ngs_sku_sales_summary_bu a
+43:     inner join sell_in_mapping_time b 
+44:   on a.day = b.time_now
+45:     AND b.type = 'A.年'",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0164,bi:Sell_in总览_各品类Sell_in销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D10,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0165,table:sell_in_mapping_time,bi:Sell_in总览_各品类销额趋势,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D11,无问题,join,"[""SQL11""]","40:         ) as sku_ngs_amt
+41:     FROM
+42:       tb_ngs_sku_sales_summary_bu t1
+43:       LEFT JOIN sell_in_mapping_time t2 
+44:       ON t1.day = t2.time_now
+45:       AND ${t2.type:type}
+46:       WHERE t1.day <= (select max(time_now) from sell_in_mapping_time where ${mapping_time:mapping_time}  AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0166,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各品类销额趋势,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D11,无问题,transform,"[""SQL11""]","39:             else 0 end
+40:         ) as sku_ngs_amt
+41:     FROM
+42:       tb_ngs_sku_sales_summary_bu t1
+43:       LEFT JOIN sell_in_mapping_time t2 
+44:       ON t1.day = t2.time_now
+45:       AND ${t2.type:type}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0167,bi:Sell_in总览_各品类销额趋势,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D11,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0168,table:sell_in_mapping_time,bi:Sell_in总览_各渠道Sell_in销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D12,无问题,join,"[""SQL12""]","40:         ) as sku_ngs_amt
+41:   FROM
+42:     tb_ngs_sku_sales_summary_bu a
+43:     left join sell_in_mapping_time b 
+44:   on a.day = b.time_now
+45:     AND b.type = 'A.年'
+46:     AND b.time_now <= (select max(time_now) from sell_in_mapping_time WHERE ${mapping_time:mapping_time} AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0169,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各渠道Sell_in销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D12,无问题,transform,"[""SQL12""]","39:             else 0 end
+40:         ) as sku_ngs_amt
+41:   FROM
+42:     tb_ngs_sku_sales_summary_bu a
+43:     left join sell_in_mapping_time b 
+44:   on a.day = b.time_now
+45:     AND b.type = 'A.年'",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0170,bi:Sell_in总览_各渠道Sell_in销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D12,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0171,table:sell_in_mapping_time,bi:Sell_in总览_各渠道销额趋势,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D13,无问题,join,"[""SQL13""]","40:       ) as sku_ngs_amt
+41:     FROM
+42:       tb_ngs_sku_sales_summary_bu t1
+43:       LEFT JOIN sell_in_mapping_time t2 
+44:       ON t1.day = t2.time_now
+45:       AND ${t2.type:type}
+46:       WHERE t1.day <= (select max(time_now) from sell_in_mapping_time where ${mapping_time:mapping_time}  AND ${type:type})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0172,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各渠道销额趋势,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D13,无问题,transform,"[""SQL13""]","39:             else 0 end
+40:       ) as sku_ngs_amt
+41:     FROM
+42:       tb_ngs_sku_sales_summary_bu t1
+43:       LEFT JOIN sell_in_mapping_time t2 
+44:       ON t1.day = t2.time_now
+45:       AND ${t2.type:type}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0173,bi:Sell_in总览_各渠道销额趋势,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D13,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0174,table:sell_in_mapping_time,bi:Sell_in总览_各客户Sell_in销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D14,无问题,join,"[""SQL14""]","34:         ) as sku_ngs_amt
+35:   FROM
+36:     tb_ngs_sku_sales_summary_bu 
+37:   WHERE day in (select time_now from sell_in_mapping_time where ${mapping_time:mapping_time}) -- 获取本期的数据量
+38:     AND ${customer_id:customer_id}
+39:     AND ${sku_id:sku_id}
+40:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0175,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各客户Sell_in销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D14,无问题,transform,"[""SQL14""]","33:             else 0 end
+34:         ) as sku_ngs_amt
+35:   FROM
+36:     tb_ngs_sku_sales_summary_bu 
+37:   WHERE day in (select time_now from sell_in_mapping_time where ${mapping_time:mapping_time}) -- 获取本期的数据量
+38:     AND ${customer_id:customer_id}
+39:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0176,bi:Sell_in总览_各客户Sell_in销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D14,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0177,table:sell_in_mapping_time,bi:Sell_in总览_各区域Sell_in销额,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D15,无问题,join,"[""SQL15""]","24:         ) as sku_ngs_amt
+25:     FROM
+26:         tb_ngs_sku_sales_summary_bu 
+27:   WHERE day in (select time_now from sell_in_mapping_time where ${mapping_time:mapping_time}) -- 获取本期的数据量
+28:     AND ${customer_id:customer_id}
+29:     AND ${sku_id:sku_id}
+30:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0178,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_各区域Sell_in销额,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D15,无问题,transform,"[""SQL15""]","23:             else 0 end
+24:         ) as sku_ngs_amt
+25:     FROM
+26:         tb_ngs_sku_sales_summary_bu 
+27:   WHERE day in (select time_now from sell_in_mapping_time where ${mapping_time:mapping_time}) -- 获取本期的数据量
+28:     AND ${customer_id:customer_id}
+29:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0179,bi:Sell_in总览_各区域Sell_in销额,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D15,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0180,table:sell_in_mapping_time,bi:Sell_in总览_增量来源产品维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D16,无问题,join,"[""SQL16""]","51:         ) t2 
+52:     ON concat(nvl(T1.category_code,''),nvl(T1.category_name,'')) = t2.category_name 
+53:     WHERE
+54:         day IN ( SELECT time_now FROM sell_in_mapping_time WHERE  ${mapping_time:mapping_time} ) 
+55:     AND ${customer_id:customer_id}
+56:     AND ${t1.sku_id:sku_id}
+57:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0181,table:tb_ngs_customer_product_channel,bi:Sell_in总览_增量来源产品维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D16,无问题,join,"[""SQL16""]","42:         tb_ngs_sku_sales_summary_bu t1
+43:         LEFT JOIN (
+44:             select category_code category_p, concat(nvl(category_code,''),nvl(category_name,'')) as category_name
+45:             from tb_ngs_customer_product_channel
+46:             group by concat(nvl(category_code,''),nvl(category_name,''))
+47:             union all 
+48:             select 'ALL' category_p, concat(nvl(category_code,''),nvl(category_name,'')) as category_name  -- category_name不唯一，一个name对应多个code，所以要拼接",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0182,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_增量来源产品维度,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D16,无问题,transform,"[""SQL16""]","39:         -- SUM( CASE WHEN t1.new_product_code <> 1 AND t1.core_product_line_code = 1 THEN sku_ngs_amt ELSE 0 END ) AS core_product_line,
+40:         -- SUM( sku_ngs_amt ) AS total_amt 
+41:     FROM
+42:         tb_ngs_sku_sales_summary_bu t1
+43:         LEFT JOIN (
+44:             select category_code category_p, concat(nvl(category_code,''),nvl(category_name,'')) as category_name
+45:             from tb_ngs_customer_product_channel",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0183,bi:Sell_in总览_增量来源产品维度,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D16,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0184,table:sell_in_mapping_time,bi:Sell_in总览_增量来源渠道维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D17,无问题,join,"[""SQL17""]","38:             group by first_channel_name
+39:         ) b
+40:         ON nvl(a.first_channel_name,'') = nvl(b.channel_name,'')
+41:     WHERE day in ( select time_now from sell_in_mapping_time where ${mapping_time:mapping_time})
+42:     AND ${customer_id:customer_id}
+43:     AND ${sku_id:sku_id}
+44:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0185,table:tb_ngs_customer_product_channel,bi:Sell_in总览_增量来源渠道维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D17,无问题,join,"[""SQL17""]","30:     FROM  tb_ngs_sku_sales_summary_bu a
+31:         LEFT JOIN (
+32:             select first_channel_name channel_p, first_channel_name channel_name
+33:             from tb_ngs_customer_product_channel
+34:             group by first_channel_name
+35:             union all 
+36:             select 'ALL' channel_p,first_channel_name channel_name",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0186,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_增量来源渠道维度,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D17,无问题,transform,"[""SQL17""]","27:         ) as sku_ngs_amt
+28:     --   sum(sku_ngs_amt) as sku_ngs_amt
+29:       -- count(DISTINCT customer_id) as customers   0511逻辑变动
+30:     FROM  tb_ngs_sku_sales_summary_bu a
+31:         LEFT JOIN (
+32:             select first_channel_name channel_p, first_channel_name channel_name
+33:             from tb_ngs_customer_product_channel",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0187,bi:Sell_in总览_增量来源渠道维度,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D17,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0188,table:sell_in_mapping_time,bi:Sell_in总览_重要性矩阵产品维度,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D18,无问题,join,"[""SQL18""]","28:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+29:     FROM
+30:       tb_ngs_sku_sales_summary_bu
+31:     WHERE day in (SELECT time_now FROM sell_in_mapping_time where ${mapping_time:mapping_time})
+32:       AND ${customer_id:customer_id}
+33:       AND ${sku_id:sku_id}
+34:       AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0189,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_重要性矩阵产品维度,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D18,无问题,transform,"[""SQL18""]","27:       ) AS sku_ngs_amt
+28:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+29:     FROM
+30:       tb_ngs_sku_sales_summary_bu
+31:     WHERE day in (SELECT time_now FROM sell_in_mapping_time where ${mapping_time:mapping_time})
+32:       AND ${customer_id:customer_id}
+33:       AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0190,bi:Sell_in总览_重要性矩阵产品维度,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D18,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0191,table:sell_in_mapping_time,bi:Sell_in总览_核心产品线SELL_IN销额环比,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D20,无问题,join,"[""SQL20"", ""SQL21""]","21:       tb_ngs_sku_sales_summary_bu
+22:     WHERE
+23:       core_product_line_code = 1 
+24:     AND day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})
+25:     AND ${customer_id:customer_id}
+26:     AND ${sku_id:sku_id}
+27:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0192,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_核心产品线SELL_IN销额环比,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D20,无问题,transform,"[""SQL20"", ""SQL21""]","18:       ) AS sku_ngs_amt
+19:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+20:     FROM
+21:       tb_ngs_sku_sales_summary_bu
+22:     WHERE
+23:       core_product_line_code = 1 
+24:     AND day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0193,bi:Sell_in总览_核心产品线SELL_IN销额环比,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D20；Sell-in报表.xlsx / Sheet1!D21,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0194,table:sell_in_mapping_time,bi:Sell_in总览_SKU销额环比,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D22,无问题,join,"[""SQL22"", ""SQL23""]","20:     FROM
+21:       tb_ngs_sku_sales_summary_bu
+22:     --   core_product_line_code <> 1    需求变动，查看的是整体SKU，不与核心产品线关联
+23:     WHERE day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})
+24:     AND ${customer_id:customer_id}
+25:     AND ${sku_id:sku_id}
+26:     AND ${colour_hue:colour_hue}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0195,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_SKU销额环比,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D22,无问题,transform,"[""SQL22"", ""SQL23""]","18:       ) AS sku_ngs_amt
+19:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+20:     FROM
+21:       tb_ngs_sku_sales_summary_bu
+22:     --   core_product_line_code <> 1    需求变动，查看的是整体SKU，不与核心产品线关联
+23:     WHERE day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})
+24:     AND ${customer_id:customer_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0196,bi:Sell_in总览_SKU销额环比,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D22；Sell-in报表.xlsx / Sheet1!D23,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。
+E0197,table:sell_in_mapping_time,bi:Sell_in总览_客户SELL_IN销额环比,JOIN / 子查询,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D24,无问题,join,"[""SQL24"", ""SQL25""]","22:     FROM
+23:       tb_ngs_sku_sales_summary_bu
+24:     WHERE
+25:        day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})
+26:    -- AND customer_grade_mark_code = 'A'
+27:     AND ${customer_id:customer_id}
+28:     AND ${sku_id:sku_id}",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0198,table:tb_ngs_sku_sales_summary_bu,bi:Sell_in总览_客户SELL_IN销额环比,加工血缘,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D24,无问题,transform,"[""SQL24"", ""SQL25""]","20:       ) AS sku_ngs_amt
+21:     --   sum(sku_ngs_amt) AS sku_ngs_amt
+22:     FROM
+23:       tb_ngs_sku_sales_summary_bu
+24:     WHERE
+25:        day in (select time_now from sell_in_mapping_time where  ${mapping_time:mapping_time})
+26:    -- AND customer_grade_mark_code = 'A'",查看SQL原文中的时间映射、参数及聚合；关系表示数据集确实引用此表。
+E0199,bi:Sell_in总览_客户SELL_IN销额环比,report:sellin,组件绑定,"[""table"", ""knowledge""]",Sell-in报表.xlsx / Sheet1!D24；Sell-in报表.xlsx / Sheet1!D25,无问题,binding,,,名称/截图支持组件对应；Quick BI绑定配置及二次计算未提供。

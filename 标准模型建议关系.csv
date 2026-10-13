@@ -1,0 +1,81 @@
+﻿id,source,target,label,relation,view,condition,evidence,status,proposed
+proposal:process:si-actual>SI-A,process:si-actual,SI-A,建议承载模型,proposal,"[""model"", ""knowledge""]",建议按业务过程组织逻辑模型；不代表新物理表已建设。,SI业务场景与标准模型建议 / SI-A,无问题,True
+proposal:process:si-target>SI-T,process:si-target,SI-T,建议承载模型,proposal,"[""model"", ""knowledge""]",建议按业务过程组织逻辑模型；不代表新物理表已建设。,SI业务场景与标准模型建议 / SI-T,无问题,True
+proposal:process:si-kp>SI-K,process:si-kp,SI-K,建议承载模型,proposal,"[""model"", ""knowledge""]",建议按业务过程组织逻辑模型；不代表新物理表已建设。,SI业务场景与标准模型建议 / SI-K,无问题,True
+proposal:process:si-month>SI-A-M,process:si-month,SI-A-M,建议承载模型,proposal,"[""model"", ""knowledge""]",建议按业务过程组织逻辑模型；不代表新物理表已建设。,SI业务场景与标准模型建议 / SI-A-M,无问题,True
+proposal:process:order>SI-O,process:order,SI-O,建议承载模型,proposal,"[""model"", ""knowledge""]",建议按业务过程组织逻辑模型；不代表新物理表已建设。,SI业务场景与标准模型建议 / SI-O,无问题,True
+proposal:SI-A>SI-S01,SI-A,SI-S01,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；复用期间映射与标准计算,E02：SQL03、08、09、26；E04：指标行2–4、14,无问题,True
+proposal:SI-A>SI-S02,SI-A,SI-S02,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；共同维度及占比分母规则,E02：SQL10–15、18、19、26；E04：指标行606–609,无问题,True
+proposal:SI-A>SI-S03,SI-A,SI-S03,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；复用产品标签与占比计算,E02：SQL06、07、16；E03：产品关联及标签；E04：指标行24–27,无问题,True
+proposal:SI-A>SI-S04,SI-A,SI-S04,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；标准客户集合及客均计算,E02：SQL04、05、17；E04：指标行20–23,无问题,True
+proposal:SI-A>SI-S05,SI-A,SI-S05,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；公共期间对比及分类规则,E02：SQL16；E04：指标行28–33,无问题,True
+proposal:SI-A>SI-S06,SI-A,SI-S06,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；客户集合及公共期间计算,E02：SQL17；E04：指标行34–36,无问题,True
+proposal:SI-A>SI-S07,SI-A,SI-S07,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；公共比较、份额及排序规则,E02：SQL18–25；E04：指标行606、610、611（增量编码重复，以名称和行定位）,无问题,True
+proposal:SI-A>SI-S08,SI-A,SI-S08,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；按场景补充DWD已有字段至ADS,E02：SQL26、28；E03：公共计算；E04：指标行2–4、11–16、40–43,无问题,True
+proposal:SI-A-M>SI-S09,SI-A-M,SI-S09,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；SI-A-M（按需，不新增实际口径）,E02：SQL39；E03：slow_moving字段；E04：指标行37–39、598–603,无问题,True
+proposal:SI-A>SI-S09,SI-A,SI-S09,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-A；SI-A-M（按需，不新增实际口径）,E02：SQL39；E03：slow_moving字段；E04：指标行37–39、598–603,无问题,True
+proposal:SI-T>SI-S10,SI-T,SI-S10,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-T；目标按原粒度保留，实际先汇总再比较,E04：指标行17–19及最新粒度说明；完整目标加工SQL未在本批SI SQL中提供,无问题,True
+proposal:SI-K>SI-S11,SI-K,SI-S11,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-K；年度KP与YTD实际对齐,E04：指标行5、8–10；用户既有HCB_M_00001计算逻辑；KP加工SQL未在本批提供,无问题,True
+proposal:SI-O>SI-S12,SI-O,SI-S12,建议支持场景,proposal,"[""model"", ""knowledge""]",SI-O条件扩展；当前不列入一期开发,E04：指标行14、612、613；订单状态加工链尚未完整提供,无问题,True
+proposal:SI-S01>metric:20261011:r00002,SI-S01,metric:20261011:r00002,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第2行；场景承接建议,无问题,True
+proposal:SI-S01>metric:20261011:r00003,SI-S01,metric:20261011:r00003,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第3行；场景承接建议,无问题,True
+proposal:SI-S01>metric:20261011:r00004,SI-S01,metric:20261011:r00004,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第4行；场景承接建议,无问题,True
+proposal:SI-S01>metric:20261011:r00014,SI-S01,metric:20261011:r00014,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第14行；场景承接建议,无问题,True
+proposal:SI-S02>metric:20261011:r00002,SI-S02,metric:20261011:r00002,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第2行；场景承接建议,无问题,True
+proposal:SI-S02>metric:20261011:r00003,SI-S02,metric:20261011:r00003,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第3行；场景承接建议,无问题,True
+proposal:SI-S02>metric:20261011:r00014,SI-S02,metric:20261011:r00014,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第14行；场景承接建议,无问题,True
+proposal:SI-S02>metric:20261011:r00606,SI-S02,metric:20261011:r00606,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第606行；场景承接建议,无问题,True
+proposal:SI-S02>metric:20261011:r00608,SI-S02,metric:20261011:r00608,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第608行；场景承接建议,无问题,True
+proposal:SI-S03>metric:20261011:r00024,SI-S03,metric:20261011:r00024,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第24行；场景承接建议,无问题,True
+proposal:SI-S03>metric:20261011:r00025,SI-S03,metric:20261011:r00025,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第25行；场景承接建议,无问题,True
+proposal:SI-S03>metric:20261011:r00026,SI-S03,metric:20261011:r00026,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第26行；场景承接建议,无问题,True
+proposal:SI-S03>metric:20261011:r00027,SI-S03,metric:20261011:r00027,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第27行；场景承接建议,无问题,True
+proposal:SI-S04>metric:20261011:r00020,SI-S04,metric:20261011:r00020,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第20行；场景承接建议,无问题,True
+proposal:SI-S04>metric:20261011:r00021,SI-S04,metric:20261011:r00021,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第21行；场景承接建议,无问题,True
+proposal:SI-S04>metric:20261011:r00022,SI-S04,metric:20261011:r00022,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第22行；场景承接建议,无问题,True
+proposal:SI-S04>metric:20261011:r00023,SI-S04,metric:20261011:r00023,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第23行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00028,SI-S05,metric:20261011:r00028,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第28行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00029,SI-S05,metric:20261011:r00029,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第29行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00030,SI-S05,metric:20261011:r00030,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第30行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00031,SI-S05,metric:20261011:r00031,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第31行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00032,SI-S05,metric:20261011:r00032,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第32行；场景承接建议,无问题,True
+proposal:SI-S05>metric:20261011:r00033,SI-S05,metric:20261011:r00033,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第33行；场景承接建议,无问题,True
+proposal:SI-S06>metric:20261011:r00034,SI-S06,metric:20261011:r00034,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第34行；场景承接建议,无问题,True
+proposal:SI-S06>metric:20261011:r00035,SI-S06,metric:20261011:r00035,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第35行；场景承接建议,无问题,True
+proposal:SI-S06>metric:20261011:r00036,SI-S06,metric:20261011:r00036,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第36行；场景承接建议,无问题,True
+proposal:SI-S07>metric:20261011:r00606,SI-S07,metric:20261011:r00606,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第606行；场景承接建议,无问题,True
+proposal:SI-S07>metric:20261011:r00608,SI-S07,metric:20261011:r00608,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第608行；场景承接建议,无问题,True
+proposal:SI-S07>metric:20261011:r00610,SI-S07,metric:20261011:r00610,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第610行；场景承接建议,无问题,True
+proposal:SI-S07>metric:20261011:r00611,SI-S07,metric:20261011:r00611,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第611行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00002,SI-S08,metric:20261011:r00002,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第2行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00003,SI-S08,metric:20261011:r00003,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第3行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00004,SI-S08,metric:20261011:r00004,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第4行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00011,SI-S08,metric:20261011:r00011,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第11行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00012,SI-S08,metric:20261011:r00012,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第12行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00013,SI-S08,metric:20261011:r00013,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第13行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00014,SI-S08,metric:20261011:r00014,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第14行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00015,SI-S08,metric:20261011:r00015,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第15行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00016,SI-S08,metric:20261011:r00016,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第16行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00040,SI-S08,metric:20261011:r00040,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第40行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00041,SI-S08,metric:20261011:r00041,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第41行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00042,SI-S08,metric:20261011:r00042,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第42行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00043,SI-S08,metric:20261011:r00043,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第43行；场景承接建议,无问题,True
+proposal:SI-S08>metric:20261011:r00044,SI-S08,metric:20261011:r00044,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第44行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00037,SI-S09,metric:20261011:r00037,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第37行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00038,SI-S09,metric:20261011:r00038,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第38行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00039,SI-S09,metric:20261011:r00039,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第39行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00598,SI-S09,metric:20261011:r00598,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第598行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00599,SI-S09,metric:20261011:r00599,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第599行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00600,SI-S09,metric:20261011:r00600,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第600行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00601,SI-S09,metric:20261011:r00601,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第601行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00602,SI-S09,metric:20261011:r00602,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第602行；场景承接建议,无问题,True
+proposal:SI-S09>metric:20261011:r00603,SI-S09,metric:20261011:r00603,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第603行；场景承接建议,无问题,True
+proposal:SI-S10>metric:20261011:r00017,SI-S10,metric:20261011:r00017,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第17行；场景承接建议,无问题,True
+proposal:SI-S10>metric:20261011:r00018,SI-S10,metric:20261011:r00018,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第18行；场景承接建议,无问题,True
+proposal:SI-S10>metric:20261011:r00019,SI-S10,metric:20261011:r00019,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第19行；场景承接建议,无问题,True
+proposal:SI-S11>metric:20261011:r00005,SI-S11,metric:20261011:r00005,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第5行；场景承接建议,无问题,True
+proposal:SI-S11>metric:20261011:r00008,SI-S11,metric:20261011:r00008,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第8行；场景承接建议,无问题,True
+proposal:SI-S11>metric:20261011:r00009,SI-S11,metric:20261011:r00009,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第9行；场景承接建议,无问题,True
+proposal:SI-S11>metric:20261011:r00010,SI-S11,metric:20261011:r00010,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第10行；场景承接建议,无问题,True
+proposal:SI-S12>metric:20261011:r00612,SI-S12,metric:20261011:r00612,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第612行；场景承接建议,无问题,True
+proposal:SI-S12>metric:20261011:r00613,SI-S12,metric:20261011:r00613,建议使用指标,proposal,"[""model"", ""knowledge""]",建议场景复用；业务定义原文保持,10月11日指标字典第613行；场景承接建议,无问题,True
