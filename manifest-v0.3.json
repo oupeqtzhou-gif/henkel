@@ -1,0 +1,68 @@
+{
+  "version": "0.3",
+  "entry": "HCB_知识工作台_v0.3.html",
+  "standalone": true,
+  "browserVisualVerification": false,
+  "sourceChecks": {
+    "index.html": "7ee975931ecbb5c50eb33d7fccaa1342078174149ba04c5b71c2cbd0bb4196a5",
+    "styles.css": "5b336558ccb8f4a45e6a2d807650b9de5b8ef74904e503046bd3b490ef98e1c0",
+    "data.js": "23e1f1decda99ebea29c3a79a0f4ce33f0053de6de61ce938c37ca53c4e2f1ab",
+    "view-data.js": "7d0b3f6d3fc3d47b6ca4c69b1d54aa0c761d94223d052b59e4dab29c803a9eaa",
+    "enrichment.js": "3124e2e38867fa86607fe04f7d4de0f9443064aabba7ab8da4d1b859d785c9b3",
+    "layouts.js": "cb0e3dfa578b1c4f108cc399b459d09a206bf8c62afb255e7fd4b75d4fb3d742",
+    "core.js": "86c5a5cd67db73fdb80a9a73f90e9551be43078fa06882f982d4e4afe4139f37",
+    "app.js": "f99e50098a9d1c1ef3522ff5615873abbde4309da9d8df94805d2b38a7ade10a"
+  },
+  "files": [
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "HCB_Offline_POS_知识补全版_20261015.xlsx",
+      "bytes": 681204,
+      "sha256": "73949a5da82ee381ddb00de04cc85de3efaab4ff509fbf490ad9c6434af2b06d"
+    },
+    {
+      "file": "HCB_知识工作台_v0.3.html",
+      "bytes": 14511065,
+      "sha256": "6831656d0b02f1e70d4b71a2db7fbf0db74293e1f33f307793efd5c203f57d8b"
+    },
+    {
+      "file": "README_v0.3.md",
+      "bytes": 3056,
+      "sha256": "b2fc2e6a92d4ca8b490717ac40ee5c3f28e86095c5fcb76cb720162f542aa474"
+    },
+    {
+      "file": "index.html",
+      "bytes": 306,
+      "sha256": "5c1b9d6f49189922f6bea6868aaf806842bcc94958e504061bdc631405646366"
+    },
+    {
+      "file": "metrics.html",
+      "bytes": 300,
+      "sha256": "7f751df853b7d6d367d2892d6acd002084f3ea2c83639085179cf6ebe5f03162"
+    },
+    {
+      "file": "models.html",
+      "bytes": 298,
+      "sha256": "0c5b8c563b9bc41a19e27427c7788b9b8c2197e1408e878a73635a26a33b42a9"
+    },
+    {
+      "file": "tables.html",
+      "bytes": 298,
+      "sha256": "26a0a6b52d325cb9827f158d0e40f5cc61ef72830d7dc1ea25a2ff51d934b4ef"
+    },
+    {
+      "file": "v0.3_自查与修复清单.csv",
+      "bytes": 1898,
+      "sha256": "77a94e74b42b5272d8a021cbfc6b52cc3ea48ed4efc886b3687bbaf02675a8a0"
+    },
+    {
+      "file": "验证结果_v0.3.json",
+      "bytes": 14109,
+      "sha256": "891f9e80cd321122b5688df6efe0ad13e93456eb20ae13da86901fea4a88f18a"
+    }
+  ]
+}

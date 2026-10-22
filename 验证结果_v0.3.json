@@ -1,0 +1,594 @@
+{
+  "version": "0.3",
+  "target": "/Users/ranwang/Documents/ChatGPT/New project/hcb-knowledge-v0.3/site",
+  "method": "Pure Node DOM simulation, independent graph oracle and source/data checks. No browser or screenshot verification.",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "01 原始事实基线及新增计算路径完整",
+      "ok": true,
+      "detail": {
+        "objects": 439,
+        "metrics": 45,
+        "direct": 38,
+        "folded": 21,
+        "qualifiedSubset": 1
+      },
+      "elapsedMs": 609
+    },
+    {
+      "name": "02 SI指标默认全链路高亮、方向并集及聚焦一致",
+      "ok": true,
+      "detail": [
+        {
+          "name": "upstream全景逐条着色",
+          "ok": true,
+          "detail": {
+            "nodes": 6,
+            "edges": 5
+          }
+        },
+        {
+          "name": "downstream全景逐条着色",
+          "ok": true,
+          "detail": {
+            "nodes": 1,
+            "edges": 0
+          }
+        },
+        {
+          "name": "both全景逐条着色",
+          "ok": true,
+          "detail": {
+            "nodes": 6,
+            "edges": 5
+          }
+        },
+        {
+          "name": "完整双向聚焦=上游与下游的并集",
+          "ok": true,
+          "detail": {
+            "nodes": 6,
+            "edges": 5
+          }
+        }
+      ],
+      "elapsedMs": 1392
+    },
+    {
+      "name": "03 表与标准模型均按当前图全链路着色",
+      "ok": true,
+      "detail": [
+        {
+          "name": "table",
+          "ok": true,
+          "detail": {
+            "id": "table:tb_ka_pos_sku_store_sales_summary_bu",
+            "nodes": 165,
+            "edges": 259
+          }
+        },
+        {
+          "name": "model",
+          "ok": true,
+          "detail": {
+            "id": "SI:SI-A",
+            "nodes": 11,
+            "edges": 10
+          }
+        }
+      ],
+      "elapsedMs": 1118
+    },
+    {
+      "name": "04 跨视图清理不适用筛选，清单CSV有数据",
+      "ok": true,
+      "detail": [
+        {
+          "name": "metric",
+          "ok": true,
+          "detail": {
+            "rows": 45,
+            "csvBytes": 7751
+          }
+        },
+        {
+          "name": "table",
+          "ok": true,
+          "detail": {
+            "rows": 203,
+            "csvBytes": 30924
+          }
+        },
+        {
+          "name": "model",
+          "ok": true,
+          "detail": {
+            "rows": 8,
+            "csvBytes": 1578
+          }
+        }
+      ],
+      "elapsedMs": 1174
+    },
+    {
+      "name": "05 聚焦后搜索与模型场景展开不会空图",
+      "ok": true,
+      "detail": [
+        {
+          "name": "185聚焦后搜索选择178",
+          "ok": true,
+          "detail": {
+            "focus": "metric:POS:HCB_M_00178",
+            "visible": 2
+          }
+        },
+        {
+          "name": "汇总场景聚焦后展开",
+          "ok": true,
+          "detail": {
+            "members": 9,
+            "visible": 36
+          }
+        }
+      ],
+      "elapsedMs": 506
+    },
+    {
+      "name": "06 聚合BI深链接在全新运行环境中恢复",
+      "ok": true,
+      "detail": {
+        "freshVM": true,
+        "selected": "bi:aggregate:SI",
+        "visible": 146,
+        "hash": "#view=table&mode=graph&direction=both&depth=all&node=bi%3Aaggregate%3ASI&groupBI=1"
+      },
+      "elapsedMs": 693
+    },
+    {
+      "name": "07 知识连线标签不重坐标，模型补充关系进入知识和详情",
+      "ok": true,
+      "detail": [
+        {
+          "name": "bundle标签坐标",
+          "ok": true,
+          "detail": [
+            {
+              "x": 980,
+              "y": 729,
+              "text": "124 条关联"
+            },
+            {
+              "x": 1520,
+              "y": 478,
+              "text": "1866 条关联"
+            },
+            {
+              "x": 980,
+              "y": 470,
+              "text": "2 条关联"
+            },
+            {
+              "x": 980,
+              "y": 211,
+              "text": "135 条关联"
+            },
+            {
+              "x": 500,
+              "y": 478,
+              "text": "18 条关联"
+            },
+            {
+              "x": 980,
+              "y": 494,
+              "text": "51 条关联"
+            }
+          ]
+        },
+        {
+          "name": "新增模型建议的统一关联",
+          "ok": true,
+          "detail": {
+            "supplementaryRelations": 13,
+            "detailExample": "table:tb_ngs_sku_sales_summary_bu|SI:SI-A|proposal"
+          }
+        },
+        {
+          "name": "全图节点矩形不相交且坐标在画布内",
+          "ok": true,
+          "detail": [
+            {
+              "view": "knowledge",
+              "nodes": 26,
+              "width": 1960,
+              "height": 966
+            },
+            {
+              "view": "knowledge-expanded",
+              "nodes": 439,
+              "width": 1960,
+              "height": 7911
+            },
+            {
+              "view": "table",
+              "nodes": 203,
+              "width": 3212,
+              "height": 1956
+            },
+            {
+              "view": "table-BI-grouped",
+              "nodes": 146,
+              "width": 2972,
+              "height": 1636
+            },
+            {
+              "view": "metric",
+              "nodes": 45,
+              "width": 1994,
+              "height": 1572
+            },
+            {
+              "view": "model",
+              "nodes": 28,
+              "width": 1500,
+              "height": 1228
+            },
+            {
+              "view": "model-expanded",
+              "nodes": 44,
+              "width": 1500,
+              "height": 2356
+            }
+          ]
+        }
+      ],
+      "elapsedMs": 770
+    },
+    {
+      "name": "08 F5证据行号不会误识别F4/F21来源",
+      "ok": true,
+      "detail": {
+        "source": "POS:F5",
+        "sqlLines": [
+          4,
+          21
+        ]
+      },
+      "elapsedMs": 206
+    },
+    {
+      "name": "09 六份长SQL、20个SI数据集字段及共享主数据来源补齐",
+      "ok": true,
+      "detail": [
+        {
+          "name": "长SQL原文",
+          "ok": true,
+          "detail": [
+            {
+              "id": "POS:F31",
+              "characters": 33908,
+              "sha256": "f8fb673c5dc28375de223da4ad0914a4a7a8e6bd3fc8c347f573f4e17c460f7e"
+            },
+            {
+              "id": "POS:F49",
+              "characters": 20795,
+              "sha256": "91822bc9aa260a70f4cf05b6788315fa9553f86568eaab2d17d063513c4e5ee0"
+            },
+            {
+              "id": "POS:F71",
+              "characters": 9133,
+              "sha256": "913d4593ce645227865b883f35bccfd06352c9e3dd7730ec1d07a92a1fb1b09b"
+            },
+            {
+              "id": "POS:F77",
+              "characters": 37129,
+              "sha256": "255b4dc9051d316d39391b55e91ffc81c4633a2323fc5c0f0a9f93a7bc0fa4ef"
+            },
+            {
+              "id": "POS:F79",
+              "characters": 70914,
+              "sha256": "09fecd07e56c22b42f47959322a9c2ffeec68bfd69305a73e877541c2c3d1c93"
+            },
+            {
+              "id": "POS:F81",
+              "characters": 86548,
+              "sha256": "9121a4b8fd5a8ae2a38299ca61baf488d3f9d4d633bc2bd6aed1fb98aff9ce42"
+            }
+          ]
+        },
+        {
+          "name": "SI数据集与共用主数据字段来源",
+          "ok": true,
+          "detail": {
+            "datasets": 20,
+            "shared": [
+              {
+                "id": "table:dwd_master_data_customer_bu",
+                "sources": [
+                  "SI:SQL34",
+                  "POS:F65"
+                ]
+              },
+              {
+                "id": "table:dwd_master_data_product_bu",
+                "sources": [
+                  "SI:SQL35",
+                  "POS:F62"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "elapsedMs": 431
+    },
+    {
+      "name": "10 计算异常进入问题详情及清单状态，基线事实不变",
+      "ok": true,
+      "detail": {
+        "alerts": [
+          "POS-IMPL-F16-BASE-MOM-ZERO-DENOMINATOR",
+          "POS-IMPL-F15-BASE-UNAGGREGATED"
+        ],
+        "totalIssues": 4
+      },
+      "elapsedMs": 409
+    }
+  ],
+  "observations": {
+    "2": [
+      {
+        "name": "upstream全景逐条着色",
+        "ok": true,
+        "detail": {
+          "nodes": 6,
+          "edges": 5
+        }
+      },
+      {
+        "name": "downstream全景逐条着色",
+        "ok": true,
+        "detail": {
+          "nodes": 1,
+          "edges": 0
+        }
+      },
+      {
+        "name": "both全景逐条着色",
+        "ok": true,
+        "detail": {
+          "nodes": 6,
+          "edges": 5
+        }
+      },
+      {
+        "name": "完整双向聚焦=上游与下游的并集",
+        "ok": true,
+        "detail": {
+          "nodes": 6,
+          "edges": 5
+        }
+      }
+    ],
+    "3": [
+      {
+        "name": "table",
+        "ok": true,
+        "detail": {
+          "id": "table:tb_ka_pos_sku_store_sales_summary_bu",
+          "nodes": 165,
+          "edges": 259
+        }
+      },
+      {
+        "name": "model",
+        "ok": true,
+        "detail": {
+          "id": "SI:SI-A",
+          "nodes": 11,
+          "edges": 10
+        }
+      }
+    ],
+    "4": [
+      {
+        "name": "metric",
+        "ok": true,
+        "detail": {
+          "rows": 45,
+          "csvBytes": 7751
+        }
+      },
+      {
+        "name": "table",
+        "ok": true,
+        "detail": {
+          "rows": 203,
+          "csvBytes": 30924
+        }
+      },
+      {
+        "name": "model",
+        "ok": true,
+        "detail": {
+          "rows": 8,
+          "csvBytes": 1578
+        }
+      }
+    ],
+    "5": [
+      {
+        "name": "185聚焦后搜索选择178",
+        "ok": true,
+        "detail": {
+          "focus": "metric:POS:HCB_M_00178",
+          "visible": 2
+        }
+      },
+      {
+        "name": "汇总场景聚焦后展开",
+        "ok": true,
+        "detail": {
+          "members": 9,
+          "visible": 36
+        }
+      }
+    ],
+    "7": [
+      {
+        "name": "bundle标签坐标",
+        "ok": true,
+        "detail": [
+          {
+            "x": 980,
+            "y": 729,
+            "text": "124 条关联"
+          },
+          {
+            "x": 1520,
+            "y": 478,
+            "text": "1866 条关联"
+          },
+          {
+            "x": 980,
+            "y": 470,
+            "text": "2 条关联"
+          },
+          {
+            "x": 980,
+            "y": 211,
+            "text": "135 条关联"
+          },
+          {
+            "x": 500,
+            "y": 478,
+            "text": "18 条关联"
+          },
+          {
+            "x": 980,
+            "y": 494,
+            "text": "51 条关联"
+          }
+        ]
+      },
+      {
+        "name": "新增模型建议的统一关联",
+        "ok": true,
+        "detail": {
+          "supplementaryRelations": 13,
+          "detailExample": "table:tb_ngs_sku_sales_summary_bu|SI:SI-A|proposal"
+        }
+      },
+      {
+        "name": "全图节点矩形不相交且坐标在画布内",
+        "ok": true,
+        "detail": [
+          {
+            "view": "knowledge",
+            "nodes": 26,
+            "width": 1960,
+            "height": 966
+          },
+          {
+            "view": "knowledge-expanded",
+            "nodes": 439,
+            "width": 1960,
+            "height": 7911
+          },
+          {
+            "view": "table",
+            "nodes": 203,
+            "width": 3212,
+            "height": 1956
+          },
+          {
+            "view": "table-BI-grouped",
+            "nodes": 146,
+            "width": 2972,
+            "height": 1636
+          },
+          {
+            "view": "metric",
+            "nodes": 45,
+            "width": 1994,
+            "height": 1572
+          },
+          {
+            "view": "model",
+            "nodes": 28,
+            "width": 1500,
+            "height": 1228
+          },
+          {
+            "view": "model-expanded",
+            "nodes": 44,
+            "width": 1500,
+            "height": 2356
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "name": "长SQL原文",
+        "ok": true,
+        "detail": [
+          {
+            "id": "POS:F31",
+            "characters": 33908,
+            "sha256": "f8fb673c5dc28375de223da4ad0914a4a7a8e6bd3fc8c347f573f4e17c460f7e"
+          },
+          {
+            "id": "POS:F49",
+            "characters": 20795,
+            "sha256": "91822bc9aa260a70f4cf05b6788315fa9553f86568eaab2d17d063513c4e5ee0"
+          },
+          {
+            "id": "POS:F71",
+            "characters": 9133,
+            "sha256": "913d4593ce645227865b883f35bccfd06352c9e3dd7730ec1d07a92a1fb1b09b"
+          },
+          {
+            "id": "POS:F77",
+            "characters": 37129,
+            "sha256": "255b4dc9051d316d39391b55e91ffc81c4633a2323fc5c0f0a9f93a7bc0fa4ef"
+          },
+          {
+            "id": "POS:F79",
+            "characters": 70914,
+            "sha256": "09fecd07e56c22b42f47959322a9c2ffeec68bfd69305a73e877541c2c3d1c93"
+          },
+          {
+            "id": "POS:F81",
+            "characters": 86548,
+            "sha256": "9121a4b8fd5a8ae2a38299ca61baf488d3f9d4d633bc2bd6aed1fb98aff9ce42"
+          }
+        ]
+      },
+      {
+        "name": "SI数据集与共用主数据字段来源",
+        "ok": true,
+        "detail": {
+          "datasets": 20,
+          "shared": [
+            {
+              "id": "table:dwd_master_data_customer_bu",
+              "sources": [
+                "SI:SQL34",
+                "POS:F65"
+              ]
+            },
+            {
+              "id": "table:dwd_master_data_product_bu",
+              "sources": [
+                "SI:SQL35",
+                "POS:F62"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
